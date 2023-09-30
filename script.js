@@ -134,4 +134,18 @@ function startAutoKuji() {
     }
 }
 
+// 決済ボタンをタップしている最中、画像が切り替わる仕様
+document.addEventListener("DOMContentLoaded", function() {
+    var paymentButton = document.getElementById("payment-button");
+
+    paymentButton.addEventListener("touchstart", function() {
+        paymentButton.src = "img/saisenbox0001b.jpg";
+    });
+
+    paymentButton.addEventListener("touchend", function() {
+        paymentButton.src = "img/saisenbox0001.jpg";
+    });
+});
+
+
 document.getElementById("auto-button").addEventListener("click", startAutoKuji);
