@@ -130,17 +130,16 @@ function startAutoKuji() {
     }
 }
 
-// 決済ボタンをタップしている最中、画像が切り替わる仕様
+// 決済ボタンの画像が自動で切り替わる仕様
 document.addEventListener("DOMContentLoaded", function() {
     var paymentButton = document.getElementById("payment-button");
+    var images = ["img/saisenbox0001a.jpg", "img/saisenbox0001b.jpg"];
+    var currentIndex = 0;
 
-    paymentButton.addEventListener("touchstart", function() {
-        paymentButton.src = "img/saisenbox0001b.jpg";
-    });
-
-    paymentButton.addEventListener("touchend", function() {
-        paymentButton.src = "img/saisenbox0001a.jpg";
-    });
+    setInterval(function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        paymentButton.src = images[currentIndex];
+    }, 1000); // 1000ミリ秒（1秒）ごとに画像を切り替える
 });
 
 
