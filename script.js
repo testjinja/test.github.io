@@ -44,13 +44,8 @@ function displayRandomKujiImage() {
     const imageElement = document.getElementById('kuji-img');
     if (kujiImagesLoaded.length > 0) {
         const randomIndex = Math.floor(Math.random() * kujiImagesLoaded.length);
-        let selectedImageUrl = kujiImagesLoaded[randomIndex];
-        
-        // キャッシュを回避するためのパラメータ追加
-        const cacheBuster = '?t=' + new Date().getTime();
-        selectedImageUrl = selectedImageUrl.substring(5, selectedImageUrl.length - 2) + cacheBuster;
-
-        imageElement.src = selectedImageUrl;
+        const selectedImageUrl = kujiImagesLoaded[randomIndex];
+        imageElement.src = selectedImageUrl.substring(5, selectedImageUrl.length - 2);
         increaseCount();
 
         // ここで特定のおみくじ画像をチェック
