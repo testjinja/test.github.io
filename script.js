@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     paymentButton.addEventListener("touchend", function() {
-        paymentButton.src = "img/saisenbox0001.jpg";
+        paymentButton.src = "img/saisenbox0001a.jpg";
     });
 });
 
