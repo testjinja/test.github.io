@@ -1,4 +1,4 @@
-const kujiImages = Array.from({ length: 367 }, (_, i) => `url("kuji_images/kuji${String(i + 1).padStart(5, '0')}.jpg")`);
+"const kujiImages = Array.from({ length: 367 }, (_, i) => `url(""kuji_images/kuji${String(i + 1).padStart(5, '0')}.jpg"")`);
 let kujiImagesLoaded = [];
 
 kujiImages.forEach(imageUrl => {
@@ -13,11 +13,11 @@ let switchCount = 0;
 
 function increaseCount() {
     switchCount++;
-    document.getElementById("count-display").innerText = switchCount;
+    document.getElementById(""count-display"").innerText = switchCount;
 }
 
 function hideControls() {
-    document.querySelector(".button-container").style.display = "none";
+    document.querySelector("".button-container"").style.display = ""none"";
 }
 
 function playSpecialKujiSound() {
@@ -27,13 +27,13 @@ function playSpecialKujiSound() {
 }
 
 function checkForSpecialKuji(imageUrl) {
-    if (imageUrl.includes("kuji00001.jpg") ||
-        imageUrl.includes("kuji00002.jpg") ||
-        imageUrl.includes("kuji00003.jpg") ||
-        imageUrl.includes("kuji00004.jpg") ||
-        imageUrl.includes("kuji00005.jpg")) {
+    if (imageUrl.includes(""kuji00001.jpg"") ||
+        imageUrl.includes(""kuji00002.jpg"") ||
+        imageUrl.includes(""kuji00003.jpg"") ||
+        imageUrl.includes(""kuji00004.jpg"") ||
+        imageUrl.includes(""kuji00005.jpg"")) {
             
-            console.log("特定のおみくじ画像を検出!");
+            console.log(""特定のおみくじ画像を検出!"");
             hideControls();
             showCongratulations();
             playSpecialKujiSound();  // ここで効果音を再生
@@ -44,9 +44,13 @@ function displayRandomKujiImage() {
     const imageElement = document.getElementById('kuji-img');
     if (kujiImagesLoaded.length > 0) {
         const randomIndex = Math.floor(Math.random() * kujiImagesLoaded.length);
-        const selectedImageUrl = kujiImagesLoaded[randomIndex];
-        imageElement.src = selectedImageUrl.substring(5, selectedImageUrl.length - 2);
+        let selectedImageUrl = kujiImagesLoaded[randomIndex];
+        
+        // キャッシュを回避するためのパラメータ追加
+        const cacheBuster = '?t=' + new Date().getTime();
+        selectedImageUrl = selectedImageUrl.substring(5, selectedImageUrl.length - 2) + cacheBuster;
 
+        imageElement.src = selectedImageUrl;
         increaseCount();
 
         // ここで特定のおみくじ画像をチェック
@@ -62,11 +66,11 @@ document.getElementById('manual-button').addEventListener('click', function(even
 let autoInterval = null;
 
 function updateAutoButtonText(isRunning) {
-    const autoButton = document.getElementById("auto-button");
+    const autoButton = document.getElementById(""auto-button"");
     if (isRunning) {
-        autoButton.innerHTML = "停止";
+        autoButton.innerHTML = ""停止"";
     } else {
-        autoButton.innerHTML = "オススメ<br>自動 de<br>おみくじ";
+        autoButton.innerHTML = ""オススメ<br>自動 de<br>おみくじ"";
     }
 }
 
@@ -78,7 +82,7 @@ function showCongratulations() {
         updateAutoButtonText(false);
     }
     
-    console.log("showCongratulations関数が呼び出されました"); // このログを追加
+    console.log(""showCongratulations関数が呼び出されました""); // このログを追加
 
     const imageUrl = document.getElementById('image-display').style.backgroundImage;
     // document.getElementById('kuji-result').style.backgroundImage = imageUrl;
@@ -103,18 +107,18 @@ document.getElementById('congratulations-modal').addEventListener('click', funct
         // document.getElementById('congratulations-modal').style.display = 'none';
     // }
 // });
-document.getElementById("retry-button").addEventListener("click", function() {
+document.getElementById(""retry-button"").addEventListener(""click"", function() {
     // button-containerを再表示する
-    document.querySelector(".button-container").style.display = "flex"; 
+    document.querySelector("".button-container"").style.display = ""flex""; 
 
     // カウンターを0に戻す
-    document.getElementById("count-display").innerText = "0";
+    document.getElementById(""count-display"").innerText = ""0"";
 
     // 画像の変更回数をカウントする変数を0にリセット
     switchCount = 0;
 
     // おめでとう画面を非表示にする
-    document.getElementById("congratulations-modal").style.display = "none";
+    document.getElementById(""congratulations-modal"").style.display = ""none"";
 });
 
 function startAutoKuji() {
