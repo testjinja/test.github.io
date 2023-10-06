@@ -52,8 +52,8 @@ function displayRandomKujiImage() {
     const imageElement = document.getElementById('kuji-img');
     if (kujiImagesLoaded.length > 0) {
         let selectedImageUrl;
-        if (isCeilingEnabled && switchCount >= 49) {
-            // 50回目で特定のおみくじ画像を選択
+        if (isCeilingEnabled && switchCount >= 9) {
+            // 10回目で特定のおみくじ画像を選択
             selectedImageUrl = 'url("kuji_images/kuji00001.jpg")'; // 必要に応じて変更
         } else {
             const randomIndex = Math.floor(Math.random() * kujiImagesLoaded.length);
