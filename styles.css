@@ -251,10 +251,6 @@ input:checked + .slider {
   background-color: #2196F3; /* オンのときの背景色 */
 }
 
-input:checked + .slider:before {
-  transform: translateX(30px); /* トグルを右に動かす */
-}
-
 /* 追加: ホバー時のスタイル */
 .switch:hover .slider {
   box-shadow: 0 0 1px #2196F3;
