@@ -255,3 +255,17 @@ input:checked + .slider:before {
 .switch:hover .slider {
   box-shadow: 0 0 1px #2196F3;
 }
+
+/* トグルボタンの左右表示のスタイル調整 */
+.toggle-label-left, .toggle-label-right {
+    font-size: 14px;       /* フォントサイズを調整 */
+    vertical-align: middle; /* テキストの位置を中央に調整 */
+    margin: 0 10px;       /* ラベルの前後に少し余白を追加 */
+}
+
+/* トグルボタンを中央配置するためのスタイル調整 */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
