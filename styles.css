@@ -202,11 +202,56 @@ button {
     content: url("img/saisenbox0001b.jpg");
 }
 
-#toggle-ceiling-button {
-    justify-content: center;  /* 絶対位置を指定 */
- /*  left: 50%;           /* 画面の左から50%の位置に配置 */
-    /*transform: translateX(-50%); /* ボタンの中心を基準に左右の位置を調整 */
-    /*height: 50px;        /* ボタンの高さを50pxに設定 */
-    align-items: center;
-    /* 必要に応じて他のスタイルも追加できます。例: padding, background-color, border, etc. */
+/* スイッチのベーススタイル */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* チェックボックスを非表示に */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* スライダー (トグルの背景) のスタイル */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* オフのときの背景色 */
+  transition: .4s;
+  border-radius: 34px; /* 丸い形にする */
+}
+
+/* 円形のトグル部分のスタイル */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white; /* トグルの色 */
+  transition: .4s;
+  border-radius: 50%; /* 円形にする */
+}
+
+/* チェックボックスがチェックされたときのスタイル */
+input:checked + .slider {
+  background-color: #2196F3; /* オンのときの背景色 */
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px); /* トグルを右に動かす */
+}
+
+/* 追加: ホバー時のスタイル */
+.switch:hover .slider {
+  box-shadow: 0 0 1px #2196F3;
 }
