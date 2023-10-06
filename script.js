@@ -53,11 +53,21 @@ function displayRandomKujiImage() {
     if (kujiImagesLoaded.length > 0) {
         let selectedImageUrl;
         if (isCeilingEnabled && switchCount >= 49) {  // 50回目で天井が有効の場合
-            selectedImageUrl = 'url("kuji_images/kuji00001.jpg")'; // 必要に応じて変更
+            // 5つの特定のおみくじ画像のURLを配列に格納
+            const ceilingImages = [
+                'url("kuji_images/kuji00001.jpg")',
+                'url("kuji_images/kuji00002.jpg")',
+                'url("kuji_images/kuji00003.jpg")',
+                'url("kuji_images/kuji00004.jpg")',
+                'url("kuji_images/kuji00005.jpg")'
+            ];
+            // 5つの画像の中からランダムに1つを選択
+            selectedImageUrl = ceilingImages[Math.floor(Math.random() * ceilingImages.length)];
         } else {
             const randomIndex = Math.floor(Math.random() * kujiImagesLoaded.length);
             selectedImageUrl = kujiImagesLoaded[randomIndex];
         }
+
         imageElement.src = selectedImageUrl.substring(5, selectedImageUrl.length - 2);
 
         increaseCount();
