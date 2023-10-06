@@ -259,8 +259,9 @@ input:checked + .slider:before {
 /* トグルボタンの左右表示のスタイル調整 */
 .switch {
     display: flex;
-    align-items: center;  /* テキストとスライダーを中央揃え */
-    justify-content: center; /* すべての要素を中央揃え */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 必要に応じて */
 }
 
 .toggle-label-left, .toggle-label-right {
