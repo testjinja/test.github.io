@@ -203,9 +203,9 @@ button {
 }
 
 #toggle-ceiling-button {
-    position: absolute;  /* 絶対位置を指定 */
-    left: 50%;           /* 画面の左から50%の位置に配置 */
-    transform: translateX(-50%); /* ボタンの中心を基準に左右の位置を調整 */
-    height: 50px;        /* ボタンの高さを50pxに設定 */
+    position: center;  /* 絶対位置を指定 */
+ /*  left: 50%;           /* 画面の左から50%の位置に配置 */
+    /*transform: translateX(-50%); /* ボタンの中心を基準に左右の位置を調整 */
+    /*height: 50px;        /* ボタンの高さを50pxに設定 */
     /* 必要に応じて他のスタイルも追加できます。例: padding, background-color, border, etc. */
 }
