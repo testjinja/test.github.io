@@ -89,6 +89,15 @@ document.getElementById('manual-button').addEventListener('click', function(even
 
 });
 
+document.getElementById('auto-button').addEventListener('click', function(event) {
+    // 自動のおみくじボタンのクリックをトラッキング
+    gtag('event', 'click', {
+        'event_category': 'Omikuji',
+        'event_label': 'Auto Button Click'
+    });
+});
+
+
 let autoInterval = null;
 
 function updateAutoButtonText(isRunning) {
@@ -98,12 +107,6 @@ function updateAutoButtonText(isRunning) {
     } else {
         autoButton.innerHTML = "オススメ<br>自動 de<br>おみくじ";
     }
-
-// 自動のおみくじボタンのクリックをトラッキング
-    gtag('event', 'click', {
-        'event_category': 'Omikuji',
-        'event_label': 'Auto Button Click'
-    });
 
 }
 
