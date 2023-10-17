@@ -1,4 +1,4 @@
-const kujiImages = Array.from({ length: 377 }, (_, i) => `url("kuji_images/kuji${String(i + 1).padStart(5, '0')}.jpg")`);
+const kujiImages = Array.from({ length: 419 }, (_, i) => `url("kuji_images/kuji${String(i + 1).padStart(5, '0')}.jpg")`);
 let kujiImagesLoaded = [];
 
 kujiImages.forEach(imageUrl => {
@@ -80,6 +80,13 @@ function displayRandomKujiImage() {
 document.getElementById('manual-button').addEventListener('click', function(event) {
     event.stopPropagation();  // この行を追加
     displayRandomKujiImage();
+
+// 手動のおみくじボタンのクリックをトラッキング
+    gtag('event', 'click', {
+        'event_category': 'Omikuji',
+        'event_label': 'Manual Button Click'
+    });
+
 });
 
 let autoInterval = null;
@@ -91,6 +98,13 @@ function updateAutoButtonText(isRunning) {
     } else {
         autoButton.innerHTML = "オススメ<br>自動 de<br>おみくじ";
     }
+
+// 自動のおみくじボタンのクリックをトラッキング
+    gtag('event', 'click', {
+        'event_category': 'Omikuji',
+        'event_label': 'Auto Button Click'
+    });
+
 }
 
 function showCongratulations() {
@@ -102,6 +116,13 @@ function showCongratulations() {
     }
     
     console.log("showCongratulations関数が呼び出されました"); // このログを追加
+
+    // Google アナリティクスのイベントトラッキング
+    gtag('event', 'view', {
+        'event_category': 'Modal',
+        'event_label': 'Congrats Modal'
+    });
+
 
     const imageUrl = document.getElementById('image-display').style.backgroundImage;
     // document.getElementById('kuji-result').style.backgroundImage = imageUrl;
