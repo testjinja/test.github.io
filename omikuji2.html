@@ -73,6 +73,20 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById("special-kuji-number").addEventListener("change", function() {
+            let value = parseInt(this.value, 10); // 入力された数字を取得
+    
+            // 値が10以下の場合、11に修正
+            if (value < 11) {
+                this.value = 11;
+            }
+            // 値が151以上の場合、150に修正
+            else if (value > 150) {
+                this.value = 150;
+            }
+        });
+    </script>
     <script src="omikuji2script.js"></script>
 </body>
 
