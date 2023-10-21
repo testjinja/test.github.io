@@ -26,24 +26,6 @@ function playSpecialKujiSound() {
     sound.play();
 }
 
-/*
-// チヤときどきおみくじを非アクティブ化
-function checkForSpecialKuji(imageUrl) {
-    if (imageUrl.includes("kuji00001.jpg") ||
-        imageUrl.includes("kuji00002.jpg") ||
-        imageUrl.includes("kuji00003.jpg") ||
-        imageUrl.includes("kuji00004.jpg") ||
-        imageUrl.includes("kuji00005.jpg")) {
-            
-            console.log("特定のおみくじ画像を検出!");
-            hideControls();
-            showCongratulations();
-            playSpecialKujiSound();  // ここで効果音を再生
-    }
-}
-*/　// 31行～44行まで
-
-
 // イラストNo.指定のコード
 function checkForSpecialKuji(imageUrl) {
     const userSelectedKuji = document.getElementById('special-kuji-number').value;
@@ -52,6 +34,7 @@ function checkForSpecialKuji(imageUrl) {
     // ユーザーが指定したおみくじが表示されたかを確認
     if (imageUrl.includes(`kuji${userSelectedKujiPadded}.jpg`)) {
         console.log("ユーザーが指定したおみくじ画像を検出!");
+        playSpecialKujiSound();  // ここで効果音を再生
         showCongratulations();  // おめでとうのモーダルを表示
         
         // 手動・自動ボタンとカウンターを非表示にする
@@ -71,7 +54,6 @@ function checkForSpecialKuji(imageUrl) {
 }
 
 
-/*
 let isCeilingEnabled = false;  // トグルボタンがオフの初期状態を示す
 
 // 新しいトグルボタン用のイベントリスナー
@@ -79,38 +61,6 @@ document.getElementById("toggle-ceiling-input").addEventListener("change", funct
     isCeilingEnabled = this.checked;
     console.log(isCeilingEnabled ? "天井オン" : "天井オフ");  // デバッグ用
 });
-*/　// 62行～70行まで
-
-/*
-function displayRandomKujiImage() {
-    const imageElement = document.getElementById('kuji-img');
-    if (kujiImagesLoaded.length > 0) {
-        let selectedImageUrl;
-        if (isCeilingEnabled && switchCount >= 49) {  // 50回目で天井が有効の場合
-            // 5つの特定のおみくじ画像のURLを配列に格納
-            const ceilingImages = [
-                'url("kuji_images/kuji00001.jpg")',
-                'url("kuji_images/kuji00002.jpg")',
-                'url("kuji_images/kuji00003.jpg")',
-                'url("kuji_images/kuji00004.jpg")',
-                'url("kuji_images/kuji00005.jpg")'
-            ];
-            // 5つの画像の中からランダムに1つを選択
-            selectedImageUrl = ceilingImages[Math.floor(Math.random() * ceilingImages.length)];
-        } else {
-            const randomIndex = Math.floor(Math.random() * kujiImagesLoaded.length);
-            selectedImageUrl = kujiImagesLoaded[randomIndex];
-        }
-
-        imageElement.src = selectedImageUrl.substring(5, selectedImageUrl.length - 2);
-
-        increaseCount();
-
-        // ここで特定のおみくじ画像をチェック
-        checkForSpecialKuji(selectedImageUrl);
-    }
-}
-*/　// 72行～101行まで
 
 function displayRandomKujiImage() {
     const imageElement = document.getElementById('kuji-img');
@@ -118,7 +68,7 @@ function displayRandomKujiImage() {
         let selectedImageUrl;
 
         // 10回目で天井が有効の場合
-        if (switchCount >= 9) { 
+        if (isCeilingEnabled && switchCount >= 9) { 
             const userSelectedKuji = document.getElementById('special-kuji-number').value;
             const userSelectedKujiPadded = String(userSelectedKuji).padStart(5, '0');
             selectedImageUrl = `url("kuji_images/kuji${userSelectedKujiPadded}.jpg")`;
