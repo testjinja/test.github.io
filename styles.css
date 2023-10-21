@@ -272,3 +272,15 @@ input:checked + .slider {
 .slider {
     /* 必要に応じてスタイルを追加/調整 */
 }
+
+/* コンテナを中央揃えにするためのスタイル */
+.centered-container {
+    text-align: center; /* テキストとinline要素を中央揃え */
+    width: 100%; /* コンテナの幅を最大に */
+    margin: 0 auto; /*自動マージンで中央配置 */
+}
+
+/* input要素のフォントサイズを設定 */
+#special-kuji-number {
+font-size: 16px;
+}
