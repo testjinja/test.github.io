@@ -214,7 +214,7 @@ document.getElementById("retry-button").addEventListener("click", function() {
     switchCount = 0;
 
     // イラストNo.指定部分を再表示する
-    document.querySelector(".centered-container").style.display = "flex";
+    document.querySelector(".centered-container").style.display = "";
 
     // おめでとう画面を非表示にする
     document.getElementById("congratulations-modal").style.display = "none";
