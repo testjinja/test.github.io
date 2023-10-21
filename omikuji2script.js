@@ -52,14 +52,19 @@ function checkForSpecialKuji(imageUrl) {
     // ユーザーが指定したおみくじが表示されたかを確認
     if (imageUrl.includes(`kuji${userSelectedKujiPadded}.jpg`)) {
         console.log("ユーザーが指定したおみくじ画像を検出!");
-        startAutoKuji();  // ここで自動切り替えを停止
+        showCongratulations();  // おめでとうのモーダルを表示
+        // 手動・自動ボタンとカウンターを非表示にする
+        document.querySelector(".button-container").style.display = "none";
+        if (autoInterval) {
+            clearInterval(autoInterval); // 自動切り替えを停止
+            autoInterval = null;
+            updateAutoButtonText(false);
+        }
     }
-
-    // ... [残りのコードはそのまま]
 }
 
 
-
+/*
 let isCeilingEnabled = false;  // トグルボタンがオフの初期状態を示す
 
 // 新しいトグルボタン用のイベントリスナー
@@ -67,8 +72,9 @@ document.getElementById("toggle-ceiling-input").addEventListener("change", funct
     isCeilingEnabled = this.checked;
     console.log(isCeilingEnabled ? "天井オン" : "天井オフ");  // デバッグ用
 });
+*/　// 62行～70行まで
 
-
+/*
 function displayRandomKujiImage() {
     const imageElement = document.getElementById('kuji-img');
     if (kujiImagesLoaded.length > 0) {
@@ -97,8 +103,28 @@ function displayRandomKujiImage() {
         checkForSpecialKuji(selectedImageUrl);
     }
 }
+*/　// 72行～101行まで
 
+function displayRandomKujiImage() {
+    const imageElement = document.getElementById('kuji-img');
+    if (kujiImagesLoaded.length > 0) {
+        let selectedImageUrl;
 
+        // 10回目で天井が有効の場合
+        if (switchCount >= 9) { 
+            const userSelectedKuji = document.getElementById('special-kuji-number').value;
+            const userSelectedKujiPadded = String(userSelectedKuji).padStart(5, '0');
+            selectedImageUrl = `url("kuji_images/kuji${userSelectedKujiPadded}.jpg")`;
+        } else {
+            const randomIndex = Math.floor(Math.random() * kujiImagesLoaded.length);
+            selectedImageUrl = kujiImagesLoaded[randomIndex];
+        }
+
+        imageElement.src = selectedImageUrl.substring(5, selectedImageUrl.length - 2);
+        increaseCount();
+        checkForSpecialKuji(selectedImageUrl);
+    }
+}
 
 document.getElementById('manual-button').addEventListener('click', function(event) {
     event.stopPropagation();  // この行を追加
