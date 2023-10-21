@@ -57,8 +57,11 @@ function checkForSpecialKuji(imageUrl) {
         // 手動・自動ボタンとカウンターを非表示にする
         document.querySelector(".button-container").style.display = "none";
         // イラストNo.指定部分を非表示にする
-        document.querySelector(".centered-container").style.display = "none";
-        
+        const centeredContainers = document.querySelectorAll(".centered-container");
+        centeredContainers.forEach(container => {
+            container.style.display = "none";
+        });
+
         if (autoInterval) {
             clearInterval(autoInterval); // 自動切り替えを停止
             autoInterval = null;
