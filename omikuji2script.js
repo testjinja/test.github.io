@@ -183,12 +183,12 @@ function showCongratulations() {
     const imageUrl = document.getElementById('image-display').style.backgroundImage;
     // document.getElementById('kuji-result').style.backgroundImage = imageUrl;
 
-    document.getElementById('switch-count-result').innerText = `おみくじを引いた回数: ${switchCount}回`;
+    document.getElementById('switch-count-result').innerText = `イラストにたどり着くまでの回数: ${switchCount}回`;
 
     // おみくじの枚数(ここでは5と仮定します。実際の値に変更してください)
     const specialKujiCount = 5;
     const percentage = ((specialKujiCount / switchCount) * 100).toFixed(2);
-    document.getElementById('percentage-result').innerText = `今回のおみくじ確率: ${percentage}%`;
+    document.getElementById('percentage-result').innerText = `今回のイラスト出現確率: ${percentage}%`;
 
     document.getElementById('congratulations-modal').style.display = 'block';
 }
