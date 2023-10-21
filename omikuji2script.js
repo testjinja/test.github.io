@@ -53,8 +53,12 @@ function checkForSpecialKuji(imageUrl) {
     if (imageUrl.includes(`kuji${userSelectedKujiPadded}.jpg`)) {
         console.log("ユーザーが指定したおみくじ画像を検出!");
         showCongratulations();  // おめでとうのモーダルを表示
+        
         // 手動・自動ボタンとカウンターを非表示にする
         document.querySelector(".button-container").style.display = "none";
+        // イラストNo.指定部分を非表示にする
+        document.querySelector(".centered-container").style.display = "none";
+        
         if (autoInterval) {
             clearInterval(autoInterval); // 自動切り替えを停止
             autoInterval = null;
@@ -208,6 +212,9 @@ document.getElementById("retry-button").addEventListener("click", function() {
 
     // 画像の変更回数をカウントする変数を0にリセット
     switchCount = 0;
+
+    // イラストNo.指定部分を再表示する
+    document.querySelector(".centered-container").style.display = "flex";
 
     // おめでとう画面を非表示にする
     document.getElementById("congratulations-modal").style.display = "none";
