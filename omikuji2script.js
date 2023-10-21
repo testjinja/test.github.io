@@ -48,6 +48,8 @@ document.getElementById("toggle-ceiling-input").addEventListener("change", funct
     console.log(isCeilingEnabled ? "天井オン" : "天井オフ");  // デバッグ用
 });
 
+/*
+// チヤときどきおみくじを非アクティブ化
 function displayRandomKujiImage() {
     const imageElement = document.getElementById('kuji-img');
     if (kujiImagesLoaded.length > 0) {
@@ -76,6 +78,22 @@ function displayRandomKujiImage() {
         checkForSpecialKuji(selectedImageUrl);
     }
 }
+*/　// 51行～82行まで
+
+// イラストNo.指定のコード
+function checkForSpecialKuji(imageUrl) {
+    const userSelectedKuji = document.getElementById('special-kuji-number').value;
+    const userSelectedKujiPadded = String(userSelectedKuji).padStart(5, '0');
+
+    // ユーザーが指定したおみくじが表示されたかを確認
+    if (imageUrl.includes(`kuji${userSelectedKujiPadded}.jpg`)) {
+        console.log("ユーザーが指定したおみくじ画像を検出!");
+        startAutoKuji();  // ここで自動切り替えを停止
+    }
+
+    // ... [残りのコードはそのまま]
+}
+
 
 document.getElementById('manual-button').addEventListener('click', function(event) {
     event.stopPropagation();  // この行を追加
