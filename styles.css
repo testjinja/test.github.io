@@ -283,7 +283,8 @@ input:checked + .slider {
     align-items: center; /* 子要素を横方向中央に配置 */
 }
 
-/* input要素のフォントサイズを設定 */
+/* input要素のフォントサイズ、表示位置を設定 */
 #special-kuji-number {
-font-size: 16px;
+    font-size: 16px;
+    text-align: center; /* 入力欄内の数字を中央揃え */
 }
