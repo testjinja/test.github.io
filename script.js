@@ -84,7 +84,7 @@ document.getElementById('manual-button').addEventListener('click', function(even
 // 手動のおみくじボタンのクリックをトラッキング
     gtag('event', 'click', {
         'event_category': 'Omikuji',
-        'event_label': 'Manual Button Click'
+        'event_label': 'おみくじManual Button Click'
     });
 
 });
@@ -93,7 +93,7 @@ document.getElementById('auto-button').addEventListener('click', function(event)
     // 自動のおみくじボタンのクリックをトラッキング
     gtag('event', 'click', {
         'event_category': 'Omikuji',
-        'event_label': 'Auto Button Click'
+        'event_label': 'おみくじAuto Button Click'
     });
 });
 
@@ -123,7 +123,7 @@ function showCongratulations() {
     // Google アナリティクスのイベントトラッキング
     gtag('event', 'view', {
         'event_category': 'Modal',
-        'event_label': 'Congrats Modal'
+        'event_label': 'おみくじCongrats Modal'
     });
 
 
