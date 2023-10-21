@@ -278,6 +278,9 @@ input:checked + .slider {
     text-align: center; /* テキストとinline要素を中央揃え */
     width: 100%; /* コンテナの幅を最大に */
     margin: 0 auto; /*自動マージンで中央配置 */
+    display: flex; /* フレックスボックスとして表示 */
+    flex-direction: column; /* 子要素を縦に並べる */
+    align-items: center; /* 子要素を横方向中央に配置 */
 }
 
 /* input要素のフォントサイズを設定 */
