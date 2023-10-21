@@ -89,6 +89,10 @@
                 this.value = 150;
             }
         });
+        
+        document.getElementById("special-kuji-number").addEventListener("focus", function() {
+            this.value = ''; // 入力欄の内容をクリア
+        });
     </script>
     <script src="omikuji2script.js"></script>
 </body>
