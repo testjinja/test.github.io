@@ -89,9 +89,9 @@ document.getElementById('manual-button').addEventListener('click', function(even
 
 /* 本ページではこの行を削除（1/6）
 // 手動のおみくじボタンのクリックをトラッキング
-    gtag('event', 'イラストclick', {
-        'event_category': 'Omikuji',
-        'event_label': 'イラストManual Button Click'
+    gtag('event', 'イダテンイラスト手動ボタンclick', {
+        'event_category': 'イダテンイラストページ',
+        'event_label': 'イラスト手動ボタン Click'
     });
 本ページではこの行を削除（2/6） */
 });
@@ -100,9 +100,9 @@ document.getElementById('manual-button').addEventListener('click', function(even
 /* 本ページではこの行を削除（3/6）
 document.getElementById('auto-button').addEventListener('click', function(event) {
     // 自動のおみくじボタンのクリックをトラッキング
-    gtag('event', 'イラスト自動click', {
-        'event_category': 'Omikuji',
-        'event_label': 'イラストAuto Button Click'
+    gtag('event', 'イダテンイラスト自動ボタンclick', {
+        'event_category': 'イダテンイラストページ',
+        'event_label': 'イラスト自動ボタン Click'
     });
 });
 本ページではこの行を削除（4/6） */
@@ -131,9 +131,9 @@ function showCongratulations() {
 
 /* 本ページではこの行を削除（5/6）
     // Google アナリティクスのイベントトラッキング
-    gtag('event', 'イラストview', {
-        'event_category': 'Modal',
-        'event_label': 'イラストCongrats Modal'
+    gtag('event', 'イダテンイラスト結果view', {
+        'event_category': 'イダテンイラスト結果',
+        'event_label': 'イダテンイラスト結果view'
     });
 本ページではこの行を削除（6/6） */
 
