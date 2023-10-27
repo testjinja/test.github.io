@@ -6,7 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>チヤ神社おみくじ</title>
     <link rel="stylesheet" href="styles.css">
+</head><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チヤ神社おみくじ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+<!-- 
+上行アナリティクスのコメントアウトタグ～スタート 本ページでは、この行を削除
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JR24BV8FLL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JR24BV8FLL');
+</script>
+下行アナリティクスのコメントアウトタグ～エンド　本ページでは、この行を削除 
+-->
+
+<body>
+    <header>
+        <img id="header-image" src="img/header000.jpg" alt="Header Image">
+    </header>
+    <main>
+        <!-- おみくじディスプレイの追加 -->
+        <div id="image-display">
+            <img src="img/kujitop00001.jpg" alt="Omikuji Image" id="kuji-img">
+        </div>
+
+       <!-- 天井トグルボタンの追加 -->
+        <div class="switch">
+            <label for="toggle-ceiling-input" class="toggle-label-left">天井なし</label>
+            <input type="checkbox" id="toggle-ceiling-input" class="toggle-ceiling">
+            <label for="toggle-ceiling-input" class="slider"></label>
+            <label for="toggle-ceiling-input" class="toggle-label-right">天井50回</label>
+        </div>
+        
+        <!-- おみくじボタン・カウントエリアの追加 -->
+        <div class="button-container">
+            <button id="manual-button">手動 de<br>おみくじ</button>
+            <div id="count-display">0</div>
+            <button id="auto-button">オススメ<br>自動 de<br>おみくじ</button>
+        </div>
+        
+　　　　　<!-- おめでとうのモーダル -->
+　　　　 <div id="congratulations-modal" style="display:none;">
+            <h2>おめでと〜♪♪♪</h2>
+            <p id="switch-count-result"></p>
+            <p id="percentage-result"></p>
+            <button id="retry-button">もう一度おみくじを引く</button>
+<!--　賽銭箱を表示するためには、この行をコメントアウト(1/2) 
+          <!-- モーダル内お賽銭箱 -->
+            <a href="https://donate.stripe.com/cN2aHvaOW5FM5gs6op" target="_blank">　
+                 <img id="payment-button" src="img/saisenbox0001a.jpg" alt="お賽銭ボタン">
+            </a>
+賽銭箱を表示するためには、この行をコメントオフ(2/2) -->
+
+<!--　広告を表示するためには、この行をコメントアウト(1/2)　-->
+                <!-- 広告リンク-->
+            <a href="https://al.dmm.com/?lurl=https%3A%2F%2Fwww.dmm.com%2Fmono%2Fhobby%2F-%2Fdetail%2F%3D%2Fcid%3Dcha_202305013458%2F&af_id=chiyajinja-001&ch=reward_ranking&ch_id=text" rel="nofollow" target="_blank">PLAMAX 『ヱヴァンゲリヲン新劇場版:破』 式波・アスカ・ラングレー</a>
+<!--　広告を表示するためには、この行をコメントオフ(2/2) -->
+
+        </div>
+        
+        <!-- omikuji2ページへのリンクボタン -->
+        <div class="centered-container">
+            <a href="omikuji2.html" class="omikuji2-link-button">チヤのいだてんイラスト<br>はこちら</a>
+        </div>
+        
+    </main>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <a href="terms.html">特定商取引法</a>
+            <p>&copy; 2023 チヤ神社. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
 
 <!-- 
 上行アナリティクスのコメントアウトタグ～スタート 本ページでは、この行を削除
