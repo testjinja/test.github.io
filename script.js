@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(function() {
         currentIndex = (currentIndex + 1) % images.length;
         paymentButton.src = images[currentIndex];
-    }, 1000); // 1000ミリ秒（1秒）ごとに画像を切り替える
+    }, 2000); // 1000ミリ秒（1秒）ごとに画像を切り替える
 });
 
 
