@@ -92,3 +92,9 @@ h2::before {
   width: 3px; /* 線の幅 */
   background-color: skyblue; /* 線の色 */
 }
+
+/* セクション間の間隔を調整する */
+section {
+  margin-top: 40px; /* 上の間隔 */
+  margin-bottom: 40px; /* 下の間隔 */
+}
