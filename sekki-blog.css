@@ -124,3 +124,71 @@ section {
 /*  height: auto; /* 縦横比を保持 */
 /*  display: block; /* ブロックレベル要素として表示 */
 /*}　*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #FFDDDD; /* 仮の色です */
+    overflow: hidden; /* 画像がheaderの高さを超えた場合にはみ出しを防ぐため */
+
+     /* ヘッダー画像の配置位置調整 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;  /* 横方向の中央寄せ */
+    align-items: flex-end;    /* 縦方向の下寄せ */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer p, footer a {
+  margin: 3px 0;
+  font-size: 0.8rem;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+}
+
+footer a {
+    font-size: 10px;          /* フォントサイズを小さく調整。適切なサイズに変更可能 */
+    color: #ffa500; /* オレンジ色のリンク */
+    text-decoration: none; /* 下線を消す */
+}
+
+footer a:hover {
+  text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+header img {
+    width: auto;  /* 幅は自動 */
+    height: 100%;  /* 高さを100%に */
+    max-width: 100%;  /* 最大幅を100%に */
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 160px); /* 80px (ヘッダー) + 80px (フッター) を引いた高さに設定 */
+    background-size: contain; /* or `cover`, 画像のアスペクト比を維持 */
+    background-position: center; /* 画像背景を中央に配置 */
+    background-repeat: no-repeat; /* 背景画像の繰り返しを防ぐ */
+}
