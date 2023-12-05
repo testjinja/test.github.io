@@ -57,7 +57,7 @@
 }
 
 /* スマートフォンなど小さい画面サイズのためのスタイル */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .article-content, .ad-space {
     flex: 0 0 100%;
     max-width: 100%;
