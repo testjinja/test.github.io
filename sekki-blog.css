@@ -119,8 +119,8 @@ header, footer {
 }
 
 /* ヘッダーの画像のスタイリング */
-header img {
-  width: 100%; /* 画像をヘッダーの幅に合わせる */
-  height: auto; /* 縦横比を保持 */
-  display: block; /* ブロックレベル要素として表示 */
-}
+/*header img {
+/*  width: 100%; /* 画像をヘッダーの幅に合わせる */
+/*  height: auto; /* 縦横比を保持 */
+/*  display: block; /* ブロックレベル要素として表示 */
+/*}　*/
