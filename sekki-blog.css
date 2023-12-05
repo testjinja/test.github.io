@@ -19,3 +19,39 @@
   }
   /* その他のデスクトップ向けスタイリング */
 }
+
+/* コンテナのスタイリング */
+.container {
+  display: flex;
+}
+
+/* ブログ記事の表示スペースのスタイリング */
+.article-content {
+  flex: 2; /* 左側のスペースを2の割合で占める */
+  padding: 20px; /* 記事の周りにスペースを追加 */
+}
+
+/* 広告スペースのスタイリング */
+.ad-space {
+  flex: 1; /* 右側のスペースを1の割合で占める */
+  padding: 20px; /* 広告の周りにスペースを追加 */
+  border-left: 1px solid #ccc; /* 左側に境界線を追加 */
+}
+
+/* メディアクエリを使用して、特定のビューポートサイズでのみこのスタイルを適用 */
+@media only screen and (min-width: 769px) {
+  .container {
+    display: flex;
+  }
+
+  .article-content {
+    flex: 2; /* 左側のスペースを2の割合で占める */
+    padding: 20px; /* 記事の周りにスペースを追加 */
+  }
+
+  .ad-space {
+    flex: 1; /* 右側のスペースを1の割合で占める */
+    padding: 20px; /* 広告の周りにスペースを追加 */
+    border-left: 1px solid #ccc; /* 左側に境界線を追加 */
+  }
+}
