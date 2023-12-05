@@ -46,7 +46,7 @@
 }
 
 /* メディアクエリを使用して、特定のビューポートサイズでのみこのスタイルを適用 */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 601px) {
   .container {
     display: flex;
   }
