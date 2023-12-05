@@ -76,3 +76,19 @@ img {
   display: block; /* ブロックレベル要素として表示 */
   margin: 20px auto; /* 上下のマージンを追加し中央揃え */
 }
+
+/* h2タグの左にスカイブルー色の縦線を配置 */
+h2 {
+  position: relative;
+  padding-left: 20px; /* 線とテキストの間隔 */
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px; /* 線の幅 */
+  background-color: skyblue; /* 線の色 */
+}
