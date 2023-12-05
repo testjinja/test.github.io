@@ -6,6 +6,9 @@
   header, footer {
     padding: 20px;
   }
+  .article-content {
+    font-size: 18px; /* 小さなデバイスでの記事の文字サイズ */
+  }
   /* その他のスマホ向けスタイリング */
 }
 
@@ -17,8 +20,12 @@
   header, footer {
     padding: 50px;
   }
+  .article-content {
+    font-size: 16px; /* 大きなデバイスでの記事の文字サイズ */
+  }
   /* その他のデスクトップ向けスタイリング */
 }
+
 
 /* コンテナのスタイリング */
 .container {
