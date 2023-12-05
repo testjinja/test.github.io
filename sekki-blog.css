@@ -32,6 +32,11 @@
   display: flex;
 }
 
+/* すべての要素に適用 */
+* {
+  box-sizing: border-box;
+}
+
 /* ブログ記事の表示スペースのスタイリング */
 .article-content {
   flex: 2; /* 左側のスペースを2の割合で占める */
