@@ -3,9 +3,9 @@
   body {
     font-size: 14px;
   }
-  header, footer {
-    padding: 0px;　/* 初期値20px */
-  }
+/*  header, footer {　*/
+/*    padding: 0px;　/* 初期値20px */
+/*  }　*/
   .article-content {
     font-size: 18px; /* 小さなデバイスでの記事の文字サイズ */
   }
@@ -17,9 +17,9 @@
   body {
     font-size: 16px;
   }
-  header, footer {
-    padding: 0px;　/* 初期値50px */
-  }
+/*  header, footer {　*/
+/*    padding: 0px;　/* 初期値50px */
+/*  }　*/
   .article-content {
     font-size: 16px; /* 大きなデバイスでの記事の文字サイズ */
   }
