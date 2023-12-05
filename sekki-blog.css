@@ -81,12 +81,13 @@ img {
   height: auto; /* 縦横比を保持 */
   max-width: 600px; /* 最大幅を設定 */
   display: block; /* ブロックレベル要素として表示 */
-  margin: 20px auto; /* 上下のマージンを追加し中央揃え */
+  margin: 10px auto; /* 上下のマージンを追加し中央揃え */
 }
 
 /* h2タグの左にスカイブルー色の縦線を配置 */
 h2 {
   position: relative;
+  margin-bottom: 10px; /* h2タグの下のマージンを減らす */
   padding-left: 20px; /* 線とテキストの間隔 */
 }
 
