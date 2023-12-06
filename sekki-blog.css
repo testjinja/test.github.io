@@ -180,6 +180,6 @@ header img {
 }
 
 .blog-omikuji, .blog-omikuji main {
-  height: auto; /* 高さを内容に応じて自動調整 */
+  height: 700px; /* 高さを内容に応じて自動調整 */
   overflow: hidden; /* スクロールバーを表示しない */
 }
