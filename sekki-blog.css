@@ -199,6 +199,7 @@ header img {
   outline: none;
   cursor: pointer;
   padding: 5px 5px;
+  margin: 0; /* マージンを削除または小さく */
   transition: 0.3s;
   font-size: 17px;
 }
