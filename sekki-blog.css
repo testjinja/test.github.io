@@ -179,16 +179,7 @@ header img {
     max-width: 100%;  /* 最大幅を100%に */
 }
 
-body-blog-omikuji, main-blog-omikuji {
+.blog-omikuji, .blog-omikuji main {
   height: auto; /* 高さを内容に応じて自動調整 */
   overflow: hidden; /* スクロールバーを表示しない */
-}
-
-
-main {
-    width: 100%;
-    min-height: calc(100vh - 160px); /* 80px (ヘッダー) + 80px (フッター) を引いた高さに設定 */
-    background-size: contain; /* or `cover`, 画像のアスペクト比を維持 */
-    background-position: center; /* 画像背景を中央に配置 */
-    background-repeat: no-repeat; /* 背景画像の繰り返しを防ぐ */
 }
