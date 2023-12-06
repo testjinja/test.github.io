@@ -179,6 +179,11 @@ header img {
     max-width: 100%;  /* 最大幅を100%に */
 }
 
+body, main-blog-omikuji {
+  height: 500px; /* 高さを500pxに固定 */
+  overflow: auto; /* コンテンツが高さを超える場合はスクロールバーを表示 */
+}
+
 main {
     width: 100%;
     min-height: calc(100vh - 160px); /* 80px (ヘッダー) + 80px (フッター) を引いた高さに設定 */
