@@ -198,7 +198,7 @@ header img {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 5px 5px;
   transition: 0.3s;
   font-size: 17px;
 }
@@ -206,7 +206,7 @@ header img {
 /* タブのコンテンツエリア */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 6px 5px;
   border: 1px solid #ccc;
   border-top: none;
 }
