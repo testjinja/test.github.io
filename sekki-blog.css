@@ -112,19 +112,6 @@ section {
   margin-bottom: 60px; /* 下の間隔 */
 }
 
-/* ヘッダーとフッターの調整 */
-/*header, footer {　*/
-/*  width: 100%; /* 幅を画面幅の100%に設定 */
-/*  box-sizing: border-box; /* パディングやボーダーを幅に含める */
-/*}　*/
-
-/* ヘッダーの画像のスタイリング */
-/*header img {
-/*  width: 100%; /* 画像をヘッダーの幅に合わせる */
-/*  height: auto; /* 縦横比を保持 */
-/*  display: block; /* ブロックレベル要素として表示 */
-/*}　*/
-
 body, html {
     margin: 0;
     padding: 0;
@@ -144,38 +131,24 @@ header {
     align-items: center;
 }
 
-/*footer {　*/
-/*    width: 100%;　*/
-/*    height: 40px;　*/
-/*    display: flex;　*/
-/*    justify-content: center;  /* 横方向の中央寄せ */
-/*    align-items: flex-end;    /* 縦方向の下寄せ */
-/*    background-color: #333;　*/
-/*    color: #fff;　*/
-/*    padding: 10px 0;　*/
-/*    text-align: center;　*/
-}　*/
-
-/* 以下フッターとメインの重なりを解除中 */
 footer {
     width: 100%;
-    height: 80px;
-  　display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    height: 40px;
+    display: flex;
+    justify-content: center;  /* 横方向の中央寄せ */
+    align-items: flex-end;    /* 縦方向の下寄せ */
     background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-     /*clear: both; /* フロート要素のクリア */
-     /*position: relative; /* フッターの位置を調整 */
+    /*clear: both; /* フロート要素のクリア */
+    /*position: relative; /* フッターの位置を調整 */
 }
 
-.container {
-    display: flex;
+/*.container {*/
+/*    display: flex;*/
     /* 必要に応じて高さやオーバーフローを調整 */
-}
-
+/*}*/
 
 .footer-content {
   max-width: 1200px;
