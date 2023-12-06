@@ -180,9 +180,10 @@ header img {
 }
 
 body, main-blog-omikuji {
-  height: 500px; /* 高さを500pxに固定 */
-  overflow: auto; /* コンテンツが高さを超える場合はスクロールバーを表示 */
+  height: auto; /* 高さを内容に応じて自動調整 */
+  overflow: hidden; /* スクロールバーを表示しない */
 }
+
 
 main {
     width: 100%;
