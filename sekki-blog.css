@@ -184,7 +184,7 @@ header img {
   overflow: hidden; /* スクロールバーを表示しない */
 }
 
-#image-display-in-blog {
+#image-display {
     width: 320px;
     height: 320px;
     margin: 10px auto; /* 画像表示枠を中央に配置するためのマージン設定 */
@@ -196,7 +196,7 @@ header img {
     position: relative;
 }
 
-#image-display-in-blog img {
+#image-display img {
     width: 320px;
     height: 320px;
     z-index: -1;
