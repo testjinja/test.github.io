@@ -203,11 +203,16 @@ header img {
   transition: 0.3s;
   font-size: 12px;
 }
+.tablinks {
+  margin-bottom: 0; /* タブボタンの下のマージンを削除 */
+  /* その他のスタイル */
+}
 
 /* タブのコンテンツエリア */
 .tabcontent {
   display: none;
   padding: 0px 0px;
+  margin-top: 0; /* タブコンテンツの上のマージンを削除 */
   border: 1px solid #ccc;
   border-top: none;
 }
