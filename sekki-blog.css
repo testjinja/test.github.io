@@ -167,7 +167,7 @@ footer {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    clear: both; /* フロート要素のクリア */
+     /*clear: both; /* フロート要素のクリア */
     position: relative; /* フッターの位置を調整 */
 }
 
