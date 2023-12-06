@@ -179,7 +179,7 @@ header img {
     max-width: 100%;  /* 最大幅を100%に */
 }
 
-body, main-blog-omikuji {
+body-blog-omikuji, main-blog-omikuji {
   height: auto; /* 高さを内容に応じて自動調整 */
   overflow: hidden; /* スクロールバーを表示しない */
 }
