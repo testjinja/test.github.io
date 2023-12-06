@@ -168,7 +168,7 @@ footer {
     padding: 10px 0;
     text-align: center;
      /*clear: both; /* フロート要素のクリア */
-    position: relative; /* フッターの位置を調整 */
+     /*position: relative; /* フッターの位置を調整 */
 }
 
 .container {
