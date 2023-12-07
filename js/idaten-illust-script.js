@@ -21,7 +21,7 @@ function hideControls() {
 }
 
 function playSpecialKujiSound() {
-    const sound = new Audio('../se/metronome00001.mp3');
+    const sound = new Audio('../sound/se/metronome00001.mp3');
     sound.volume = 0.5; // ボリュームを50%に設定 (0.0 〜 1.0 の範囲で指定)
     sound.play();
 }
