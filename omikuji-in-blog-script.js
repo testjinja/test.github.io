@@ -22,13 +22,13 @@ function openOmikuji(evt, omikujiName) {
     tabcontent[i].style.display = "none";
   }
 
-  // すべてのタブリンクを非アクティブにする
+  // すべてのタブリンクのアクティブクラスを削除する
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].classList.remove("active");
   }
 
-  // クリックされたタブのコンテンツを表示し、タブをアクティブにする
+  // クリックされたタブのコンテンツを表示し、アクティブクラスを追加する
   document.getElementById(omikujiName).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.classList.add("active");
 }
