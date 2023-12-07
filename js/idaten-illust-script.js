@@ -71,7 +71,7 @@ function displayRandomKujiImage() {
         if (isCeilingEnabled && switchCount >= 9) { 
             const userSelectedKuji = document.getElementById('special-kuji-number').value;
             const userSelectedKujiPadded = String(userSelectedKuji).padStart(5, '0');
-            selectedImageUrl = `url("kuji_images/kuji${userSelectedKujiPadded}.jpg")`;
+            selectedImageUrl = `url("../kuji_images/kuji${userSelectedKujiPadded}.jpg")`;
         } else {
             const randomIndex = Math.floor(Math.random() * kujiImagesLoaded.length);
             selectedImageUrl = kujiImagesLoaded[randomIndex];
