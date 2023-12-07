@@ -413,7 +413,7 @@ button {
 }
 
 #payment-button:hover {
-    content: url("img/saisenbox0001b.jpg");
+    content: url("../img/saisenbox0001b.jpg");
 }
 
 /* スイッチのベーススタイル */
