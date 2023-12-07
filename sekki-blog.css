@@ -190,6 +190,11 @@ header img {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
+/* アクティブなタブのスタイル */
+.tab button.active {
+  background-color: #4CAF50; /* アクティブなタブの背景色 */
+  color: white; /* アクティブなタブの文字色 */
+}
 
 /* タブのボタンのスタイル */
 .tab button {
