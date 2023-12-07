@@ -1,4 +1,4 @@
-const kujiImages = Array.from({ length: 439 }, (_, i) => `url("../kuji_images/kuji${String(i + 1).padStart(5, '0')}.jpg")`);
+const kujiImages = Array.from({ length: 439 }, (_, i) => `url("../img_kuji/kuji${String(i + 1).padStart(5, '0')}.jpg")`);
 let kujiImagesLoaded = [];
 
 kujiImages.forEach(imageUrl => {
@@ -55,11 +55,11 @@ function displayRandomKujiImage() {
         if (isCeilingEnabled && switchCount >= 49) {  // 50回目で天井が有効の場合
             // 5つの特定のおみくじ画像のURLを配列に格納
             const ceilingImages = [
-                'url("../kuji_images/kuji00001.jpg")',
-                'url("../kuji_images/kuji00002.jpg")',
-                'url("../kuji_images/kuji00003.jpg")',
-                'url("../kuji_images/kuji00004.jpg")',
-                'url("../kuji_images/kuji00005.jpg")'
+                'url("../img_kuji/kuji00001.jpg")',
+                'url("../img_kuji/kuji00002.jpg")',
+                'url("../img_kuji/kuji00003.jpg")',
+                'url("../img_kuji/kuji00004.jpg")',
+                'url("../img_kuji/kuji00005.jpg")'
             ];
             // 5つの画像の中からランダムに1つを選択
             selectedImageUrl = ceilingImages[Math.floor(Math.random() * ceilingImages.length)];
