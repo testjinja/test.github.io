@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チヤのいだてんイラスト</title>
+    <!-- 新しいブログ用のスタイルシートのリンク -->
+    <link rel="stylesheet" href="../css/sekki-blog.css">
+
+</head>
+
+<body class="blog-omikuji">
+
+    <main>
+        <!-- おみくじディスプレイの追加 -->
+        <div id="image-display">
+            <img src="../img/idatentop00001.jpg" alt="Omikuji Image" id="kuji-img">
+        </div>
+
+        <!-- 天井トグルボタンの追加 -->
+        <div class="switch">
+            <label for="toggle-ceiling-input" class="toggle-label-left">天井なし</label>
+            <input type="checkbox" id="toggle-ceiling-input" class="toggle-ceiling">
+            <label for="toggle-ceiling-input" class="slider"></label>
+            <label for="toggle-ceiling-input" class="toggle-label-right">天井10回</label>
+        </div>
+        
+        <!-- イラストNo.を指定 -->
+        <div class="centered-container">
+            <label for="special-kuji-number">見たいイラスト番号を入れてね🦊:</label>
+            <input type="number" id="special-kuji-number" min="1" max="434" value="6">
+        </div>
+        <div class="centered-container">
+            <p>【選べる番号は6〜150です☀️】</p>
+        </div>
+        
+        <!-- おみくじボタン・カウントエリアの追加 -->
+        <div class="button-container">
+            <button id="manual-button">手動 de<br>おみくじ</button>
+            <div id="count-display">0</div>
+            <button id="auto-button">オススメ<br>自動 de<br>おみくじ</button>
+        </div>
+        
+　　　　　<!-- おめでとうのモーダル -->
+　　　　 <div id="congratulations-modal" style="display:none;">
+            <h2>🦊🍀🥳</h2>
+            <p id="switch-count-result"></p>
+            <p id="percentage-result"></p>
+            <button id="retry-button">別のイラストを見る🍀</button>
+           <!-- モーダル内お賽銭箱 -->
+<!--             <a href="https://donate.stripe.com/cN2aHvaOW5FM5gs6op" target="_blank">　
+                 <img id="payment-button" src="../img/saisenbox0001a.jpg" alt="お賽銭ボタン">
+            </a> -->
+        </div>
+        
+    </main>
+
+    <script>
+        document.getElementById("special-kuji-number").addEventListener("change", function() {
+            let value = parseInt(this.value, 10); // 入力された数字を取得
+    
+            // 値が10以下の場合、11に修正
+            if (value < 6) {
+                this.value = 6;
+            }
+            // 値が151以上の場合、150に修正
+            else if (value > 150) {
+                this.value = 150;
+            }
+        });
+        
+        document.getElementById("special-kuji-number").addEventListener("focus", function() {
+            this.value = ''; // 入力欄の内容をクリア
+        });
+    </script>
+    <script src="../js/idaten-illust-script.js"></script>
+</body>
+
+</html>
