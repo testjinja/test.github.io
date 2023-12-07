@@ -179,6 +179,23 @@ header img {
     max-width: 100%;  /* 最大幅を100%に */
 }
 
+/* おみくじ用キャッチコピーのスタイル */
+.catchphrase {
+  font-family: 'Arial', sans-serif; /* お好みのフォントに変更可能 */
+  color: #333; /* テキストの色 */
+  background-color: #f8f8f8; /* 背景色 */
+  text-align: center; /* テキストを中央揃えに */
+  padding: 10px 0; /* 上下のパディング */
+  margin: 20px 0; /* 上下のマージン */
+  border-radius: 5px; /* 角丸効果 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影効果 */
+  transition: background-color 0.3s; /* ホバーエフェクトのための遷移 */
+}
+.catchphrase:hover {
+  background-color: #e2e2e2; /* ホバー時の背景色 */
+}
+
+/* おみくじ表示エリアのスタイル */
 .blog-omikuji, .blog-omikuji main {
   height: 700px; /* 高さを内容に応じて自動調整 */
   overflow: hidden; /* スクロールバーを表示しない */
