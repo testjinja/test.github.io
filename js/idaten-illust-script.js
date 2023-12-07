@@ -1,4 +1,4 @@
-const kujiImages = Array.from({ length: 434 }, (_, i) => `url("../kuji_images/kuji${String(i + 6).padStart(5, '0')}.jpg")`);
+const kujiImages = Array.from({ length: 434 }, (_, i) => `url("../img_kuji/kuji${String(i + 6).padStart(5, '0')}.jpg")`);
 let kujiImagesLoaded = [];
 
 kujiImages.forEach(imageUrl => {
@@ -71,7 +71,7 @@ function displayRandomKujiImage() {
         if (isCeilingEnabled && switchCount >= 9) { 
             const userSelectedKuji = document.getElementById('special-kuji-number').value;
             const userSelectedKujiPadded = String(userSelectedKuji).padStart(5, '0');
-            selectedImageUrl = `url("../kuji_images/kuji${userSelectedKujiPadded}.jpg")`;
+            selectedImageUrl = `url("../img_kuji/kuji${userSelectedKujiPadded}.jpg")`;
         } else {
             const randomIndex = Math.floor(Math.random() * kujiImagesLoaded.length);
             selectedImageUrl = kujiImagesLoaded[randomIndex];
