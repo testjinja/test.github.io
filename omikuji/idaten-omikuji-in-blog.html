@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チヤのいだてんおみくじ</title>
+    <!-- 新しいブログ用のスタイルシートのリンク -->
+    <link rel="stylesheet" href="../css/sekki-blog.css">
+
+</head>
+
+<body class="blog-omikuji">
+
+    <main>
+        <!-- おみくじディスプレイの追加 -->
+        <div id="image-display">
+            <img src="../img/kujitop00001.jpg" alt="Omikuji Image" id="kuji-img">
+        </div>
+
+       <!-- 天井トグルボタンの追加 -->
+        <div class="switch">
+            <label for="toggle-ceiling-input" class="toggle-label-left">天井なし</label>
+            <input type="checkbox" id="toggle-ceiling-input" class="toggle-ceiling">
+            <label for="toggle-ceiling-input" class="slider"></label>
+            <label for="toggle-ceiling-input" class="toggle-label-right">天井50回</label>
+        </div>
+        
+        <!-- おみくじボタン・カウントエリアの追加 -->
+        <div class="button-container">
+            <button id="manual-button">手動 de<br>おみくじ</button>
+            <div id="count-display">0</div>
+            <button id="auto-button">オススメ<br>自動 de<br>おみくじ</button>
+        </div>
+        
+　　　　　<!-- おめでとうのモーダル -->
+　　　　 <div id="congratulations-modal" style="display:none;">
+            <h2>おめでと〜♪♪♪</h2>
+            <p id="switch-count-result"></p>
+            <p id="percentage-result"></p>
+            <button id="retry-button">もう一度おみくじを引く</button>
+
+          <!-- モーダル内お賽銭箱 -->
+<!--　賽銭箱を表示するためには、この行をコメントアウト(1/2) 
+            <a href="https://donate.stripe.com/cN2aHvaOW5FM5gs6op" target="_blank">　
+                 <img id="payment-button" src="../img/saisenbox0001a.jpg" alt="お賽銭ボタン">
+            </a>
+      賽銭箱を表示するためには、この行をコメントオフ(2/2) -->
+
+        </div>
+        
+        <!-- 常設お賽銭箱 -->
+<!--    <div class="payment-box">
+            <a href="https://donate.stripe.com/cN2aHvaOW5FM5gs6op" target="_blank">　
+                 <img id="payment-button" src="../img/saisenbox0001a.jpg" alt="お賽銭ボタン">
+            </a>
+        </div> -->
+        
+    </main>
+
+    <script src="../js/idaten-omikuji-script.js"></script>
+</body>
+
+</html>
