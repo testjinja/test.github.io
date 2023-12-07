@@ -1,4 +1,4 @@
-const kujiImages = Array.from({ length: 439 }, (_, i) => `url("kuji_images/kuji${String(i + 1).padStart(5, '0')}.jpg")`);
+const kujiImages = Array.from({ length: 439 }, (_, i) => `url("../kuji_images/kuji${String(i + 1).padStart(5, '0')}.jpg")`);
 let kujiImagesLoaded = [];
 
 kujiImages.forEach(imageUrl => {
@@ -21,7 +21,7 @@ function hideControls() {
 }
 
 function playSpecialKujiSound() {
-    const sound = new Audio('se/metronome00001.mp3');
+    const sound = new Audio('../se/metronome00001.mp3');
     sound.volume = 0.5; // ボリュームを50%に設定 (0.0 〜 1.0 の範囲で指定)
     sound.play();
 }
