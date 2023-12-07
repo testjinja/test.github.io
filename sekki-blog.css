@@ -248,27 +248,20 @@ header img {
 /*.omikuji-section {
 /*　background-image: url('path/to/your/background-image.jpg'); /* 背景イラストのパス */
 /*　background-size: cover; /* 背景画像をカバーに設定 */
-/*　padding: 20px; /* 内側の余白 */
+/*　padding: 5px; /* 内側の余白 */
 /*　border-radius: 10px; /* 角丸効果 */
 /*　box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* 影効果 */
 /*}*/
+/* おみくじセクションの中央揃え */
+/* 全画面サイズに対応する共通スタイル */
 .omikuji-section {
   width: 360px; /* 幅を360pxに固定 */
   height: 900px; /* 高さを850pxに固定 */
   border: 2px solid #4CAF50; /* 枠線 */
   padding: 5px; /* 内側の余白 */
-  margin: 20px 0; /* 上下のマージン */
+  margin: 20px auto; /* 上下のマージンを20px、左右のマージンを自動に設定 */
   border-radius: 10px; /* 角丸効果 */
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* 影効果 */
-}
-
-/* おみくじセクションの中央揃え */
-/* 全画面サイズに対応する共通スタイル */
-.omikuji-section {
-  width: 360px; /* 幅を360pxに固定 */
-  height: 850px; /* 高さを850pxに固定 */
-  /* その他のスタイリング */
-  margin: 20px auto; /* 上下のマージンを20px、左右のマージンを自動に設定 */
   display: block; /* ブロックレベル要素として表示 */
 }
 /* スマートフォンや小さい画面サイズのためのスタイル */
