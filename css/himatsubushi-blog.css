@@ -1,3 +1,30 @@
+.site-section {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.site-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.site-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.site-rating span.stars {
+  color: #e5a00d; /* 星の色 */
+}
+
+.site-images img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
 .content-box {
   border: 2px solid #ff6f61;
   padding: 20px;
