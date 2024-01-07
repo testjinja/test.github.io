@@ -1,3 +1,31 @@
+.content-box {
+  border: 2px solid #ff6f61;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.content-title {
+  text-align: center;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.content-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content-image {
+  width: 100px; /* 適宜調整してください */
+  height: auto;
+  margin-right: 20px;
+}
+
+.content-text {
+  flex-grow: 1;
+  /* 必要に応じて追加のスタイリングをここに */
+}
 
 .site-section {
     border: 1px solid #ccc;
