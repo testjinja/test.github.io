@@ -41,7 +41,8 @@
     <div class="site-time">時間: 5分</div>
     <div class="site-category">カテゴリー: ユーモア</div>
     <p class="site-description">サイトの説明...</p>
-    <a class="site-link" href="URL-to-site">サイトを訪れる</a>
+    <a class="site-link" href="URL-to-site">サイトを訪れる</a>  
+</div>
 
 <button id="toggle-toc">目次</button>
 <nav class="toc">
@@ -83,8 +84,6 @@
   <!-- セクション3の内容 -->
     まとめ～まとめ～
 </section>
-    
-</div>
 
     <section class="article-navigation">
         <div class="nav-previous">
@@ -118,7 +117,8 @@
         </div>
     </footer>
 
-<!-- 目次に開閉機能をつけた！ -->    
+<!-- 目次に開閉機能をつけた！ --> 
+<script>
 document.getElementById('toggle-toc').addEventListener('click', function() {
   var toc = document.getElementById('toc');
   if (toc.style.display === 'none') {
@@ -127,7 +127,8 @@ document.getElementById('toggle-toc').addEventListener('click', function() {
     toc.style.display = 'none'; // 目次を非表示
   }
 });
-<!-- 目次に開閉機能をつけた！ -->    
+</script>
+<!-- 目次に開閉機能をつけた！ -->   
     
     <script src="../../js/omikuji-in-blog-script.js"></script>
 </body>
