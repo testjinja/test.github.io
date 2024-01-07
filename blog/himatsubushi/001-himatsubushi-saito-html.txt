@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【厳選】暇つぶしにぴったりな面白いおすすめサイト11選</title>
+
+        <!-- 新しいブログ用のスタイルシートのリンク -->
+    <link rel="stylesheet" href="../../css/himatsubushi-blog.css">
+
+    <!-- Google Analyticsのタグ（必要に応じて追加）-->
+<!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JR24BV8FLL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JR24BV8FLL');
+    </script>
+-->
+</head>
+
+<body>
+    <header>
+        <img id="header-image" src="../../img/logo-beans-blog.svg" alt="チヤ神社-チヤのいだてん豆ブログのロゴ">
+    </header>
+
+<main>
+    
+<div class="container">
+<!-- 以下が記事のための左側2/3スペース -->    
+  <div class="article-content">
+
+    <!-- トップタイトル -->
+    <h2>【厳選】暇つぶしにぴったりな面白いおすすめサイト11選</h2>
+
+<div class="site-section">
+    <h2 class="site-title">サイトタイトル</h2>
+    <div class="site-rating">評価: ★★★★☆</div>
+    <div class="site-time">時間: 5分</div>
+    <div class="site-category">カテゴリー: ユーモア</div>
+    <p class="site-description">サイトの説明...</p>
+    <a class="site-link" href="URL-to-site">サイトを訪れる</a>
+</div>
+
+    <section class="article-navigation">
+        <div class="nav-previous">
+         <a href="kokuu-24-sekki-2024.html" title="前の記事: 二十四節気の穀雨（こくう）とは:読み方と穀雨の楽しみ方、春の旬の食べ物を引き立てるレシピと、ガーデニングのコツ">
+            &laquo; 前の記事: 二十四節気の穀雨（こくう）とは:読み方と穀雨の楽しみ方、春の旬の食べ物を引き立てるレシピと、ガーデニングのコツ
+         </a>
+        </div>
+
+        <div class="nav-next">
+         <a href="shouman-24-sekki-2024.html" title="次の記事: 暇つぶしにぴったりな豆知識：二十四節気・小満(しょうまん)の魅力: 季節を彩る旬の食材と伝統行事、自然の美しさを楽しむ：">
+            次の記事: 暇つぶしにぴったりな豆知識：二十四節気・小満(しょうまん)の魅力: 季節を彩る旬の食材と伝統行事、自然の美しさを楽しむ： &raquo;
+         </a>
+        </div>
+    </section> 
+      
+  </div>
+    
+<!-- 以下が広告やカテゴリーなどの右側1/3スペース -->    
+  <div class="ad-space">
+    <!-- 広告などの内容 -->
+      <p>カテゴリーを配置予定</p>
+  </div>
+</div>
+
+</main>
+    
+    <footer>
+        <div class="footer-content">
+            <a href="../../terms.html">特定商取引法</a>
+            <p>&copy; 2023 チヤ神社. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="../../js/omikuji-in-blog-script.js"></script>
+</body>
+</html>
