@@ -32,6 +32,7 @@
 }
 
 .toc {
+  display: none; /* 初期状態では目次を隠す */
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   padding: 10px;
@@ -57,6 +58,15 @@
 .toc a:hover {
   background-color: #ddf;
 }
+
+/* 開閉ボタンのスタイリング */
+#toggle-toc {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
 /* 以上までが暇つぶしサイトの独自css */
 
 /* 以下はsekki.cssと同じ */
