@@ -1,3 +1,23 @@
+.site-info-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.site-info-table th,
+.site-info-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.site-info-table th {
+  background-color: #f8f8f8;
+}
+.stars {
+  color: #e5a00d; /* 星の色 */
+  font-size: 1.2em; /* 星のサイズ */
+}
+
 .site-section {
   border: 1px solid #ccc;
   margin-bottom: 20px;
