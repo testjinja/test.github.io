@@ -43,6 +43,7 @@
     <p class="site-description">サイトの説明...</p>
     <a class="site-link" href="URL-to-site">サイトを訪れる</a>
 
+<button id="toggle-toc">目次</button>
 <nav class="toc">
   <ul>
     <li><a href="#section1">1. 暇つぶしにぴったりな面白いサイト11選</a></li>
@@ -116,6 +117,17 @@
             <p>&copy; 2023 チヤ神社. All rights reserved.</p>
         </div>
     </footer>
+
+<!-- 目次に開閉機能をつけた！ -->    
+document.getElementById('toggle-toc').addEventListener('click', function() {
+  var toc = document.getElementById('toc');
+  if (toc.style.display === 'none') {
+    toc.style.display = 'block'; // 目次を表示
+  } else {
+    toc.style.display = 'none'; // 目次を非表示
+  }
+});
+<!-- 目次に開閉機能をつけた！ -->    
     
     <script src="../../js/omikuji-in-blog-script.js"></script>
 </body>
