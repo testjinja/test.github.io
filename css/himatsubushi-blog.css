@@ -114,6 +114,22 @@
   width: 250px; /* 目次の幅を設定 */
 }
 
+.toc-secondary {
+  display: none; /* 初期状態では目次を隠す */
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px; /* 目次の幅を設定 */
+}
+
+.toc-tertiary {
+  display: none; /* 初期状態では目次を隠す */
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px; /* 目次の幅を設定 */
+}
+
 .toc ul {
   list-style: none;
   padding: 0;
