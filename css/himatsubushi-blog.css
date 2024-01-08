@@ -263,7 +263,7 @@
   margin: 20px;
   overflow: hidden; /* 子要素を枠内に収めるため */
 }
-.comment-box::before {
+.comment-head::before {
   content: "";
   position: absolute;
   top: 0; /* 枠の端に吹き出しの点を合わせるために調整 */
@@ -293,7 +293,7 @@
   left: 20px; /* 吹き出しの口が出る位置 */
   border-width: 10px;
   border-style: solid;
-  border-color: #ff6a6a transparent transparent transparent; /* 吹き出しの口の色（上のみ赤で、他は透明） */
+  border-color: #f0e68c transparent transparent transparent; /* 吹き出しの口の色（上のみ赤で、他は透明） */
   transform: translateX(-50%); /* 中心から左にずらす */
 }
 .comment-list {
