@@ -261,50 +261,39 @@
   padding: 20px;
   position: relative; /* 吹き出しのために必要 */
   margin: 20px;
-  overflow: hidden; /* 子要素を枠内に収めるため */
+  background-color: #f0e68c; /* 吹き出しの背景色 */
 }
+
 .comment-box::before {
   content: "";
   position: absolute;
-  top: 0; /* 枠の端に吹き出しの点を合わせるために調整 */
-  left: 30px; /* 吹き出しの点の位置調整 */
-  width: 0;
-  height: 0;
+  top: 10px; /* 枠の上からどれだけの位置に出るか */
+  left: 30px; /* 吹き出しの口の左からの位置 */
   border: 10px solid transparent; /* 透明な境界線 */
-  border-bottom-color: #ff6a6a; /* 吹き出しの色 */
-  border-top: 0;
-  transform: translateY(-100%); /* 自身の高さ分上に移動 */
+  border-right-color: #ff6a6a; /* 吹き出しの色を右側の境界線に適用 */
+  border-left: 0;
+  transform: translateX(-100%) translateY(-50%); /* 左と上にずらす */
 }
+
 .comment-head {
   background-color: #f0e68c; /* 吹き出しの背景色 */
-  display: inline-block;
   padding: 5px 10px;
   border-radius: 5px; /* 角を丸くする */
   position: absolute;
   top: 10px; /* 枠内に収めるために調整 */
   left: 20px; /* 横位置の調整 */
-  z-index: 10; /* ::before要素の上に表示させるため */
-}
-/* 吹き出しの口を作成 */
-.comment-box::after {
-  content: '';
-  position: absolute;
-  bottom: -20px; /* 吹き出しの下部からの位置 */
-  left: 20px; /* 吹き出しの口が出る位置 */
-  border-width: 10px;
-  border-style: solid;
-  border-color: #ff6a6a transparent transparent transparent; /* 吹き出しの口の色（上のみ赤で、他は透明） */
-  transform: translateX(-50%); /* 中心から左にずらす */
-}
-.comment-list {
-  list-style: none;
-  padding: 0;
-  padding-top: 30px; /* 吹き出しのスペースを作る */
-}
-.comment-list li {
-  margin-bottom: 10px;
+  z-index: 1; /* 他の要素の上に表示させるため */
 }
 
+.comment-list {
+  list-style: none; /* リストのスタイルを無効化 */
+  padding: 0;
+  margin-top: 2em; /* 上部の余白を調整 */
+}
+
+.comment-list li {
+  margin-bottom: 0.5em; /* リストアイテム間の余白 */
+}
 
 /* 以上までが暇つぶしサイトの独自css */
 
