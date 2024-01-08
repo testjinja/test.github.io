@@ -190,6 +190,38 @@
   transform: translateY(-50%); /* Y軸方向に-50%移動して中央揃え */
 }
 
+.image-caption-box {
+  position: relative; /* 相対位置 */
+  width: 100%; /* または実際の画像の幅に合わせます */
+}
+
+.image-caption-box img {
+  width: 100%; /* 画像をコンテナにフィットさせる */
+  display: block; /* ブロック要素として表示 */
+}
+
+.caption {
+  position: absolute; /* 絶対位置 */
+  bottom: 0; /* 画像の下端に配置 */
+  left: 0; /* 画像の左端から配置 */
+  width: 100%; /* 親要素と同じ幅にする */
+  background-color: rgba(0, 255, 0, 0.3); /* 背景色 */
+  color: black; /* テキスト色 */
+  padding: 10px; /* 内側の余白 */
+  display: flex; /* フレックスボックスとして表示 */
+  align-items: center; /* 中央揃え */
+}
+
+.caption-icon {
+  font-size: 24px; /* アイコンのサイズ */
+  color: green; /* アイコンの色 */
+  margin-right: 10px; /* テキストとの間隔 */
+}
+
+.caption-text {
+  font-size: 16px; /* テキストのサイズ */
+}
+
 
 /* 以上までが暇つぶしサイトの独自css */
 
