@@ -295,7 +295,7 @@
   border-style: solid;
   border-color: #f0e68c transparent transparent transparent; /* 吹き出しの口の色（上のみ赤で、他は透明） */
   transform: translateX(-50%); /* 中心から左にずらす */
-  border-top: 0;
+  border-bottom: 0;
 }
 .comment-list {
   list-style: none;
