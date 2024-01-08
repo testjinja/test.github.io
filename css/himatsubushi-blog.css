@@ -257,39 +257,43 @@
 }
 
 .comment-box {
-  border: 2px solid #ff6a6a; /* 赤い枠の色 */
+  border: 2px solid #ff6a6a; /* 赤い枠 */
   padding: 20px;
-  position: relative; /* ふきだしのための相対位置設定 */
+  position: relative; /* 吹き出しのために必要 */
   margin: 20px;
+  overflow: hidden; /* 子要素を枠内に収めるため */
 }
 .comment-box::before {
   content: "";
   position: absolute;
-  top: -20px; /* ふきだしの位置調整 */
-  left: 30px; /* ふきだしの位置調整 */
+  top: 0; /* 枠の端に吹き出しの点を合わせるために調整 */
+  left: 30px; /* 吹き出しの点の位置調整 */
   width: 0;
   height: 0;
   border: 10px solid transparent; /* 透明な境界線 */
-  border-bottom-color: #ff6a6a; /* ふきだしの色 */
+  border-bottom-color: #ff6a6a; /* 吹き出しの色 */
   border-top: 0;
-  margin-left: -10px;
+  transform: translateY(-100%); /* 自身の高さ分上に移動 */
 }
 .comment-head {
-  background-color: #f0e68c; /* ふきだしの背景色 */
-  display: inline-block; /* インラインブロック要素として表示 */
+  background-color: #f0e68c; /* 吹き出しの背景色 */
+  display: inline-block;
   padding: 5px 10px;
-  border-radius: 5px; /* 角を丸める */
-  position: absolute; /* 絶対位置 */
-  top: -35px; /* 位置調整 */
-  left: 20px; /* 位置調整 */
+  border-radius: 5px; /* 角を丸くする */
+  position: absolute;
+  top: 10px; /* 枠内に収めるために調整 */
+  left: 20px; /* 横位置の調整 */
+  z-index: 10; /* ::before要素の上に表示させるため */
 }
 .comment-list {
-  list-style: none; /* リストのスタイルを消去 */
+  list-style: none;
   padding: 0;
+  padding-top: 30px; /* 吹き出しのスペースを作る */
 }
 .comment-list li {
-  margin-bottom: 10px; /* リストアイテムの間隔 */
+  margin-bottom: 10px;
 }
+
 
 /* 以上までが暇つぶしサイトの独自css */
 
