@@ -286,7 +286,7 @@
   z-index: 10; /* ::before要素の上に表示させるため */
 }
 /* 吹き出しの口を作成 */
-.comment-box::after {
+.comment-head::after {
   content: '';
   position: absolute;
   bottom: -20px; /* 吹き出しの下部からの位置 */
