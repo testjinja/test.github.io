@@ -212,8 +212,8 @@
   padding: 10px; /* 内側の余白 */
   display: flex; /* フレックスボックスとして表示 */
   align-items: center; /* 中央揃え */
-  margin-top: 20px; /* 上の余白 */
-  margin-bottom: 20px; /* 下の余白 */
+  margin-top: 50px; /* 上の余白 */
+  margin-bottom: 50px; /* 下の余白 */
 }
 
 .caption-icon {
