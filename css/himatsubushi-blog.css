@@ -155,6 +155,23 @@
   padding: 5px 10px;
   cursor: pointer;
 }
+.custom-title {
+  color: skyblue; /* スカイブルーの色 */
+  font-size: 24px; /* フォントサイズ */
+  border-bottom: 2px solid skyblue; /* 下線のスタイル */
+  padding-bottom: 10px; /* 下線と文字との距離 */
+  margin-bottom: 20px; /* 次の要素までの距離 */
+  display: flex; /* フレックスコンテナとして設定 */
+  align-items: center; /* アイテムを中央揃えに */
+}
+
+.checkmark {
+  font-size: 24px; /* フォントサイズ */
+  color: orange; /* チェックマークの色 */
+  margin-right: 10px; /* チェックマークとテキストとの距離 */
+}
+
+
 
 /* 以上までが暇つぶしサイトの独自css */
 
