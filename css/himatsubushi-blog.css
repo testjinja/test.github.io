@@ -194,12 +194,10 @@
   width: 100%; /* または実際の画像の幅に合わせます */
   margin-bottom: 50px; /* 下側の外側余白を広げて、次の要素との間隔を開ける */
 }
-
 .image-caption-box img {
   width: 100%; /* 画像をコンテナにフィットさせる */
   display: block; /* ブロック要素として表示 */
 }
-
 .caption {
   background-color: #90ee90; /* お好みの色に変更してください */
   color: black; /* テキスト色 */
@@ -208,22 +206,55 @@
   align-items: center; /* 中央揃え */
   justify-content: center; /* 横方向も中央揃え */
 }
-
 .caption-icon {
   font-size: 24px; /* アイコンのサイズ */
   color: green; /* アイコンの色 */
   margin-right: 10px; /* テキストとの間隔 */
 }
-
 .caption-text {
   font-size: 16px; /* テキストのサイズ */
 }
-
 /* 追加のスタイル: キャプションの下にある段落に適切な余白を追加 */
 .image-caption-box + p {
   margin-top: 20px; /* キャプションボックスの下の段落に上側の外側余白を設定 */
 }
 
+.fancy-box {
+  border: 2px solid #90ee90; /* 枠線の色と太さ */
+  padding: 20px; /* 内側の余白 */
+  margin: 20px 0; /* 上下の外側余白 */
+  background-color: #f0f8ff; /* スカイブルーの背景色 */
+  position: relative; /* アイコンの絶対位置の基準点 */
+}
+.fancy-icon {
+  font-size: 24px; /* アイコンのサイズ */
+  color: #2ECC40; /* アイコンの色 */
+  position: absolute; /* アイコンを枠線の左上に配置 */
+  top: -12px; /* 上方向への調整 */
+  left: -12px; /* 左方向への調整 */
+  background-color: #f0f8ff; /* アイコンの背景色 */
+  padding: 5px; /* アイコンの内側余白 */
+  border-radius: 50%; /* 円形にする */
+}
+.fancy-title {
+  margin: 0; /* タイトルの余白をなくす */
+  color: #333; /* タイトルのテキスト色 */
+  padding-left: 30px; /* アイコンの横に余白を作る */
+}
+.fancy-list {
+  list-style: none; /* リストマーカーを非表示にする */
+  padding: 0; /* リストの内側余白をなくす */
+  margin-top: 15px; /* リストの上の余白 */
+}
+.fancy-list li {
+  padding-left: 14px; /* テキストの左側の余白 */
+  text-indent: -14px; /* テキストを左側に押し出す */
+}
+.fancy-list li:before {
+  content: "✔"; /* チェックマークを追加 */
+  padding-right: 10px; /* チェックマークとテキストの間に余白を作る */
+  color: #2ECC40; /* チェックマークの色 */
+}
 
 
 /* 以上までが暇つぶしサイトの独自css */
