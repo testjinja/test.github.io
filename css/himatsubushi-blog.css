@@ -171,6 +171,24 @@
   margin-right: 10px; /* チェックマークとテキストとの距離 */
 }
 
+.custom-subtitle {
+  color: skyblue; /* 文字色をスカイブルーに */
+  border-bottom: 3px solid skyblue; /* 下線をスカイブルーに */
+  padding-bottom: 5px; /* 下線とテキストとの距離 */
+  margin-bottom: 20px; /* 次の要素までのマージン */
+  display: inline-block; /* インラインブロック要素として表示 */
+  font-weight: bold; /* フォントを太く */
+  position: relative; /* 相対位置 */
+}
+
+.custom-subtitle::before {
+  content: '①'; /* 番号 */
+  color: #FFA500; /* 番号の色をオレンジに */
+  position: absolute; /* 絶対位置 */
+  left: -25px; /* 左に少しオフセット */
+  top: 50%; /* 上から50%の位置 */
+  transform: translateY(-50%); /* Y軸方向に-50%移動して中央揃え */
+}
 
 
 /* 以上までが暇つぶしサイトの独自css */
