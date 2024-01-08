@@ -193,13 +193,19 @@
 .image-caption-box {
   position: relative; /* 相対位置 */
   width: 100%; /* または実際の画像の幅に合わせます */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 中央揃え */
+  margin-bottom: 50px; /* 下側の外側余白 */
 }
-
 .image-caption-box img {
   width: 100%; /* 画像をコンテナにフィットさせる */
   display: block; /* ブロック要素として表示 */
   margin-top: 20px; /* 上の余白 */
   margin-bottom: 20px; /* 下の余白 */
+}
+.image-caption-box + p {
+  margin-top: 50px; /* キャプションボックスの下のパラグラフに上側の外側余白を設定 */
 }
 
 .caption {
@@ -207,7 +213,7 @@
   bottom: 0; /* 画像の下端に配置 */
   left: 0; /* 画像の左端から配置 */
   width: 100%; /* 親要素と同じ幅にする */
-  background-color: rgba(0, 255, 0, 0.3); /* 背景色 */
+  background-color: #90ee90; /* スカイブルーではなく、緑色の背景ですが、お好みの色に変更してください */
   color: black; /* テキスト色 */
   padding: 10px; /* 内側の余白 */
   display: flex; /* フレックスボックスとして表示 */
@@ -215,13 +221,11 @@
   margin-top: 50px; /* 上の余白 */
   margin-bottom: 50px; /* 下の余白 */
 }
-
 .caption-icon {
   font-size: 24px; /* アイコンのサイズ */
   color: green; /* アイコンの色 */
   margin-right: 10px; /* テキストとの間隔 */
 }
-
 .caption-text {
   font-size: 16px; /* テキストのサイズ */
 }
