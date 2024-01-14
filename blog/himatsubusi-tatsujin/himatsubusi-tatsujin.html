@@ -3672,8 +3672,7 @@ End 入力フォーム-->
         </script>
         <script type='text/javascript' src='https://travel0727.com/wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
 <!-- End コンタクトフォーム７関連のスクリプト -->
-
-        ../../js/himatsubushi-tatsujin-js/jquery.min.js        
+      
         <script type='text/javascript' id='toc-front-js-extra'>
             /* <![CDATA[ */
             var tocplus = {
@@ -3683,12 +3682,20 @@ End 入力フォーム-->
                 "width": "Auto"
             };
             /* ]]> */
-        </script>
+        </script>        ../../js/himatsubushi-tatsujin-js/jquery.min.js  
+        <script type='text/javascript' src='../../js/himatsubushi-tatsujin-js/front.min.js' id='toc-front-js'></script>
+        <script type='text/javascript' src='../../js/himatsubushi-tatsujin-js/gtm4wp-form-move-tracker.js' id='gtm4wp-form-move-tracker-js'></script>
+        <script type='text/javascript' src='../../js/himatsubushi-tatsujin-js/jquery.sonar.min.js' id='jquery-sonar-js'></script>
+        <script type='text/javascript' src='../../js/himatsubushi-tatsujin-js/lazy-load.js' id='wpcom-lazy-load-images-js'></script>
+        <script defer type='text/javascript' src='../../js/himatsubushi-tatsujin-js/akismet-frontend.js' id='akismet-frontend-js'></script>
+<!--　元コード
         <script type='text/javascript' src='https://travel0727.com/wp-content/plugins/table-of-contents-plus/front.min.js' id='toc-front-js'></script>
         <script type='text/javascript' src='https://travel0727.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js' id='gtm4wp-form-move-tracker-js'></script>
         <script type='text/javascript' src='https://travel0727.com/wp-content/plugins/lazy-load/js/jquery.sonar.min.js' id='jquery-sonar-js'></script>
         <script type='text/javascript' src='https://travel0727.com/wp-content/plugins/lazy-load/js/lazy-load.js' id='wpcom-lazy-load-images-js'></script>
         <script defer type='text/javascript' src='https://travel0727.com/wp-content/plugins/akismet/_inc/akismet-frontend.js' id='akismet-frontend-js'></script>
+-->
+<!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
         <script>
             var zeblineSpeed = 2600
             var zeblineWindowHeight = window.innerHeight;
@@ -3714,6 +3721,8 @@ End 入力フォーム-->
                 });
             }
         </script>
+<!-- End アニメーション機能（下線アニメ）を付加 -->
+<!-- 下記はページの下部からトップへ戻るボタン機能のスクリプト -->
         <script>
             jQuery(document).ready(function() {
                 jQuery(window).scroll(function() {
@@ -3731,6 +3740,8 @@ End 入力フォーム-->
                 })
             });
         </script>
+<!-- End トップへ戻るボタン機能 -->
+<!-- 下記7行はワードプレスでページビューをカウントするためのスクリプトらしい
         <script>
             jQuery(function() {
                 jQuery.post("https://travel0727.com/?rest_route=/sng/v1/page-count", {
@@ -3738,6 +3749,7 @@ End 入力フォーム-->
                 })
             });
         </script>
+<!-- End ワードプレスでページビューをカウントするためのスクリプト -->
         <a href="#" class="totop" rel="nofollow" aria-label="トップに戻る">
             <i class="fa fa-chevron-up" aria-hidden="true"></i>
         </a>
