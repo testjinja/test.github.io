@@ -17,7 +17,7 @@
 
 /* おみくじ表示エリアのスタイル */
 .blog-omikuji, .blog-omikuji main {
-  height: auto; /* 高さを内容に応じて自動調整 */
+  height: 900px; /* 高さを内容に応じて自動調整 */
   overflow: hidden; /* スクロールバーを表示しない */
 }
 
@@ -46,7 +46,7 @@
   font-size: 12px;
 }
 .omikuji-tablinks {
-  margin-bottom: 50px; /* タブボタンの下のマージンを削除 */
+  margin-bottom: 10px; /* タブボタンの下のマージンを削除 */
   /* その他のスタイル */
 }
 
