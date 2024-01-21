@@ -281,8 +281,8 @@ header img {
 
 /* おみくじ動作用のCSS */
 #image-display {
-    width: 320px;
-    height: 320px;
+    width: 100%; /* 元の値：320px; */
+    height: 100%; /* 元の値：320px; */
     margin: 10px auto; /* 画像表示枠を中央に配置するためのマージン設定 */
     margin-bottom: 20px; /* 画像とボタンの間のスペースを確保 */
     background-size: contain;
@@ -293,8 +293,8 @@ header img {
 }
 
 #image-display img {
-    width: 320px;
-    height: 320px;
+    width: 100%; /* 元の値：320px; */
+    height: 100%; /* 元の値：320px; */
     z-index: -1;
     object-fit: cover; /* このプロパティは、画像のアスペクト比が異なる場合に、画像がコンテナにフィットするようにします */
 }
