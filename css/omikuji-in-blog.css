@@ -1,40 +1,44 @@
 /* 以下、ブログ内おみくじ外枠のスタイル 20240117追加*/
 /* おみくじ用キャッチコピーのスタイル */
-.omikuji-catchphrase {
+.catchphrase {
+  max-width: 320px; /* 最大幅を320pxに設定 */
   font-family: 'Arial', sans-serif; /* お好みのフォントに変更可能 */
   color: #333; /* テキストの色 */
   background-color: #f8f8f8; /* 背景色 */
   text-align: center; /* テキストを中央揃えに */
-  padding: 0px 0; /* 上下のパディング */
-  margin: 0px 0; /* 上下のマージン */
+  padding: 10px 0; /* 上下のパディング */
+  margin: 20px 0; /* 上下のマージン */
   border-radius: 5px; /* 角丸効果 */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影効果 */
   transition: background-color 0.3s; /* ホバーエフェクトのための遷移 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.omikuji-catchphrase:hover {
+.catchphrase:hover {
   background-color: #e2e2e2; /* ホバー時の背景色 */
 }
 
 /* おみくじ表示エリアのスタイル */
 .blog-omikuji, .blog-omikuji main {
-  height: 800px; /* 高さを内容に応じて自動調整 */
+  height: 700px; /* 高さを内容に応じて自動調整 */
   overflow: hidden; /* スクロールバーを表示しない */
 }
 
 /* タブのスタイル */
-.omikuji-tab {
+.tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 /* アクティブなタブのスタイル */
-.omikuji-tab button.active {
+.tab button.active {
   background-color: #4CAF50; /* アクティブなタブの背景色 */
   color: white; /* アクティブなタブの文字色 */
 }
 
 /* タブのボタンのスタイル */
-.omikuji-tab button {
+.tab button {
   background-color: inherit;
   float: left;
   border: none;
@@ -45,13 +49,13 @@
   transition: 0.3s;
   font-size: 12px;
 }
-.omikuji-tablinks {
-  margin-bottom: 0px; /* タブボタンの下のマージンを削除 */
+.tablinks {
+  margin-bottom: 50; /* タブボタンの下のマージンを削除 */
   /* その他のスタイル */
 }
 
 /* タブのコンテンツエリア */
-.omikuji-tabcontent {
+.tabcontent {
   display: none;
   padding: 0px 0px;
   margin-top: 0; /* タブコンテンツの上のマージンを削除 */
@@ -70,11 +74,11 @@
 /* おみくじセクションの中央揃え */
 /* 全画面サイズに対応する共通スタイル */
 .omikuji-section {
-  width: auto; /* 幅を360pxに固定 */
-  height: 900px; /* 高さを850pxに固定 */
+  max-width: 360px; /* 最大幅を360pxに設定 */
+  height: 1000px; /* 高さを850pxに固定 */
   border: 2px solid #4CAF50; /* 枠線 */
-  padding: 0px; /* 内側の余白 */
-  margin: 0px auto; /* 上下のマージンを20px、左右のマージンを自動に設定 */
+  padding: 5px; /* 内側の余白 */
+  margin: 20px auto; /* 上下のマージンを20px、左右のマージンを自動に設定 */
   border-radius: 10px; /* 角丸効果 */
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* 影効果 */
   display: block; /* ブロックレベル要素として表示 */

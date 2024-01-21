@@ -185,19 +185,22 @@ header img {
 }
 
 /* おみくじ用キャッチコピーのスタイル */
-.omikuji-catchphrase {
+.catchphrase {
   max-width: 320px; /* 最大幅を320pxに設定 */
   font-family: 'Arial', sans-serif; /* お好みのフォントに変更可能 */
   color: #333; /* テキストの色 */
   background-color: #f8f8f8; /* 背景色 */
   text-align: center; /* テキストを中央揃えに */
-  padding: 0px 0; /* 上下のパディング */
-  margin: 10px auto; /* 画像表示枠を中央に配置するためのマージン設定 */
+  padding: 10px 0; /* 上下のパディング */
+  margin: 20px 0; /* 上下のマージン */
   border-radius: 5px; /* 角丸効果 */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影効果 */
   transition: background-color 0.3s; /* ホバーエフェクトのための遷移 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.omikuji-catchphrase:hover {
+.catchphrase:hover {
   background-color: #e2e2e2; /* ホバー時の背景色 */
 }
 
@@ -232,7 +235,7 @@ header img {
   font-size: 12px;
 }
 .tablinks {
-  margin-bottom: 50; /* タブボタンの下のマージンを削除 */
+  margin-bottom: 50px; /* タブボタンの下のマージンを削除 */
   /* その他のスタイル */
 }
 
@@ -241,8 +244,8 @@ header img {
   display: none;
   padding: 0px 0px;
   margin-top: 0; /* タブコンテンツの上のマージンを削除 */
-/*  border: 1px solid #ccc; */
-/*  border-top: none; */
+  border: 1px solid #ccc;
+  border-top: none;
 }
 
 /* おみくじセクションの装飾（上：イラスト背景　下：枠） */
@@ -256,8 +259,8 @@ header img {
 /* おみくじセクションの中央揃え */
 /* 全画面サイズに対応する共通スタイル */
 .omikuji-section {
-  width: 360px; /* 幅を360pxに固定 */
-  height: 900px; /* 高さを850pxに固定 */
+  max-width: 360px; /* 最大幅を360pxに設定 */
+  height: 1000px; /* 高さを850pxに固定 */
   border: 2px solid #4CAF50; /* 枠線 */
   padding: 5px; /* 内側の余白 */
   margin: 20px auto; /* 上下のマージンを20px、左右のマージンを自動に設定 */
@@ -296,7 +299,7 @@ header img {
     max-width: 320px; /* 最大幅を320pxに設定 */
     max-height: 320px; /* 最大高さを320pxに設定 */
     z-index: -1;
-    object-fit: cover; /* 画像がコンテナにフィットするようにします */
+    object-fit: cover; /* このプロパティは、画像のアスペクト比が異なる場合に、画像がコンテナにフィットするようにします */
 }
 
 /* 以下実験中 */
