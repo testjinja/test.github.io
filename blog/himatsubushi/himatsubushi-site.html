@@ -2111,20 +2111,20 @@
 <!-- チヤおみくじのスタイルシートが他と干渉しているため、一時停止中 -->
 　　　　　    <div class="omikuji-section" style="display: block; margin-left: auto; margin-right: auto;">
 　　　　　        <!-- おみくじ用キャッチコピー -->
-　　　　　        <div class="catchphrase">
+　　　　　        <div class="omikuji-catchphrase">
 　　　　　    まずはひまつぶしに一息<br>チヤのいだてんおみくじをどうぞ。<br>あなたの今日の運勢は何％かな？？
 　　　　　        </div>  
  　　　　　   <!-- タブのナビゲーションタイプ -->
- 　　　　　       <div class="tab">
-  　　　　　          <button class="tablinks active" onclick="openOmikuji(event, 'Omikuji1')">チヤの<br>いだてん<br>おみくじ</button>
-   　　　　　         <button class="tablinks" onclick="openOmikuji(event, 'Omikuji2')">チヤの<br>いだてん<br>イラスト</button>
+ 　　　　　       <div class="omikuji-tab">
+  　　　　　          <button class="omikuji-tablinks active" onclick="openOmikuji(event, 'Omikuji1')">チヤの<br>いだてん<br>おみくじ</button>
+   　　　　　         <button class="omikuji-tablinks" onclick="openOmikuji(event, 'Omikuji2')">チヤの<br>いだてん<br>イラスト</button>
   　　　　　      </div>
 　　　　　    <!-- タブコンテンツ -->
-　　　　　        <div id="Omikuji1" class="tabcontent" style="display:block;">
+　　　　　        <div id="Omikuji1" class="omikuji-tabcontent" style="display:block;">
 　　　　　            <!-- おみくじ1のコンテンツ -->
 　　　　　            <iframe src="../../omikuji/idaten-omikuji-in-blog.html" width="100%" height="700px"></iframe>
 　　　　　        </div>
-　　　　　        <div id="Omikuji2" class="tabcontent" style="display:none;">
+　　　　　        <div id="Omikuji2" class="omikuji-tabcontent" style="display:none;">
 　　　　　            <!-- おみくじ2のコンテンツ -->
 　　　　　            <iframe src="../../omikuji/idaten-illust-in-blog.html" width="100%" height="700px"></iframe>
 　　　　　        </div>
