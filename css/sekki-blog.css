@@ -494,7 +494,7 @@ input:checked + .slider {
 
 /* おみくじ表示エリアのスタイル */
 .omikuji-blog-omikuji, .omikuji-blog-omikuji main {
-  height: 900px; /* 高さを内容に応じて自動調整 */
+  height: auto; /* 高さを内容に応じて自動調整 */
   overflow: hidden; /* スクロールバーを表示しない */
 }
 
