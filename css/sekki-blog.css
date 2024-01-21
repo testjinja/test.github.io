@@ -241,8 +241,8 @@ header img {
   display: none;
   padding: 0px 0px;
   margin-top: 0; /* タブコンテンツの上のマージンを削除 */
-  border: 1px solid #ccc;
-  border-top: none;
+/*  border: 1px solid #ccc; */
+/*  border-top: none; */
 }
 
 /* おみくじセクションの装飾（上：イラスト背景　下：枠） */
