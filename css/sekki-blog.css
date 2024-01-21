@@ -186,7 +186,7 @@ header img {
 
 /* おみくじ用キャッチコピーのスタイル */
 .omikuji-catchphrase {
-  width: 100%;
+  max-width: 320px; /* 最大幅を320pxに設定 */
   font-family: 'Arial', sans-serif; /* お好みのフォントに変更可能 */
   color: #333; /* テキストの色 */
   background-color: #f8f8f8; /* 背景色 */
