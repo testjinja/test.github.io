@@ -477,7 +477,7 @@ input:checked + .slider {
 
 /* 以下、ブログ内おみくじのスタイル 20240117追加*/
 /* おみくじ用キャッチコピーのスタイル */
-.omikuji-catchphrase {
+.omikuji-blog-catchphrase {
   font-family: 'Arial', sans-serif; /* お好みのフォントに変更可能 */
   color: #333; /* テキストの色 */
   background-color: #f8f8f8; /* 背景色 */
@@ -488,30 +488,30 @@ input:checked + .slider {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影効果 */
   transition: background-color 0.3s; /* ホバーエフェクトのための遷移 */
 }
-.omikuji-catchphrase:hover {
+.omikuji-blog-catchphrase:hover {
   background-color: #e2e2e2; /* ホバー時の背景色 */
 }
 
 /* おみくじ表示エリアのスタイル */
-.blog-omikuji, .blog-omikuji main {
+.omikuji-blog-omikuji, .omikuji-blog-omikuji main {
   height: 900px; /* 高さを内容に応じて自動調整 */
   overflow: hidden; /* スクロールバーを表示しない */
 }
 
 /* タブのスタイル */
-.omikuji-tab {
+.omikuji-blog-tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 /* アクティブなタブのスタイル */
-.omikuji-tab button.active {
+.omikuji-blog-tab button.active {
   background-color: #4CAF50; /* アクティブなタブの背景色 */
   color: white; /* アクティブなタブの文字色 */
 }
 
 /* タブのボタンのスタイル */
-.omikuji-tab button {
+.omikuji-blog-tab button {
   background-color: inherit;
   float: left;
   border: none;
@@ -522,16 +522,16 @@ input:checked + .slider {
   transition: 0.3s;
   font-size: 12px;
 }
-.omikuji-tablinks {
+.omikuji-blog-tablinks {
   margin-bottom: 0px; /* タブボタンの下のマージンを削除 */
   /* その他のスタイル */
 }
 
 /* タブのコンテンツエリア */
-.omikuji-tabcontent {
+.omikuji-blog-tabcontent {
   display: none;
   padding: 0px 0px;
-  margin-top: 0; /* タブコンテンツの上のマージンを削除 */
+  margin-top: 5px; /* タブコンテンツの上のマージンを削除 */
   border: 1px solid #ccc;
   border-top: none;
 }
@@ -546,7 +546,7 @@ input:checked + .slider {
 /*}*/
 /* おみくじセクションの中央揃え */
 /* 全画面サイズに対応する共通スタイル */
-.omikuji-section {
+.omikuji-blog-section {
   width: auto; /* 幅を360pxに固定 */
   height: 900px; /* 高さを850pxに固定 */
   border: 2px solid #4CAF50; /* 枠線 */
