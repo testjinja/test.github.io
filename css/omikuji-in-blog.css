@@ -71,7 +71,7 @@
 /* 全画面サイズに対応する共通スタイル */
 .omikuji-section {
   width: auto; /* 幅を360pxに固定 */
-  height: 800px; /* 高さを850pxに固定 */
+  height: 900px; /* 高さを850pxに固定 */
   border: 2px solid #4CAF50; /* 枠線 */
   padding: 0px; /* 内側の余白 */
   margin: 0px auto; /* 上下のマージンを20px、左右のマージンを自動に設定 */
