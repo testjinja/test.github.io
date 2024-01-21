@@ -529,6 +529,8 @@ input:checked + .slider {
 
 /* タブのコンテンツエリア */
 .omikuji-blog-tabcontent {
+  height: 890px; /* 高さを内容に応じて自動調整 */
+  overflow: hidden; /* スクロールバーを表示しない */
   display: none;
   padding: 0px 0px;
   margin-top: 5px; /* タブコンテンツの上のマージンを削除 */
