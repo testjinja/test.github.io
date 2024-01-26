@@ -291,7 +291,18 @@
                   　　<img id="payment-button" src="../img/saisenbox0001a.jpg" alt="お賽銭ボタン">
                   </a>
 　　　　　    </div> 
-
+<!-- 決済ボタンの画像を自動で切り替える -->
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var paymentButton = document.getElementById("payment-button");
+            var images = ["../img/saisenbox0001a.jpg", "../img/saisenbox0001b.jpg"];
+            var currentIndex = 0;
+        setInterval(function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            paymentButton.src = images[currentIndex];
+            }, 2000); // 1000ミリ秒（1秒）ごとに画像を切り替える
+        });
+        </script>
 <!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
         <script>
             var zeblineSpeed = 2600
