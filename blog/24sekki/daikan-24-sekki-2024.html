@@ -1507,7 +1507,7 @@ background: #f0f0f0;
 border-radius: 5px;
 background: #f0f0f0;
 }
-/*吹き出しのアイコンを大きくする*/
+/*吹き出しのアイコンを大きくする
 .balloon-box {
 padding-bottom: 20px;
 }
@@ -1564,6 +1564,100 @@ top:82px;
 font-size: 11px;
 }   
 }
+*/
+            /* 吹き出し */
+            .balloon-box {
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 3px;
+            }
+
+            .balloon-left .balloon-icon {
+                left: 0;
+            }
+
+            .balloon-icon {
+                position: absolute;
+                top: 0;
+                overflow: hidden;
+                width: 80px;
+                height: 80px;
+                margin-bottom: 0;
+            }
+
+            .balloon-icon img {
+                width: 80px;
+                height: auto;
+                margin-bottom: 0!important;
+            }
+
+            .icon-name {
+                position: absolute;
+                text-align: center;
+                letter-spacing: 0;
+                line-height: 0.7rem!important;
+                color: #777;
+                top: 85px;
+            }
+
+            .icon-name {
+                width: 80px;
+                top: 85px;
+                font-size: 12px;
+            }
+
+            .balloon-left .balloon-serif .balloon-content {
+                padding: .5rem;
+            }
+
+            @media (min-width: 768px) {
+                .icon-name {
+                    width: 80px;
+                    top: 85px;
+                    font-size: 10px;
+                }
+
+                .balloon-left .balloon-serif .balloon-content {
+                    padding: 1.15rem;
+                }
+
+                .balloon-left .balloon-serif:before {
+                    top: 16px;
+                }
+            }
+
+            .balloon-left .balloon-serif {
+                position: relative;
+                float: left;
+                margin: 0 5px 40px 85px;
+                padding: 0;
+            }
+
+            .balloon-left .balloon-serif .balloon-content {
+                position: relative;
+                line-height: 1.5rem;
+                background: #efefef;
+                border-radius: 6px;
+                font-size: .95em;
+                z-index: 2;
+            }
+
+            .balloon-left.balloon-bg-gray .balloon-serif:before, .balloon-left.has-efefef-bgballon .balloon-serif:before {
+                border-color: transparent #efefef transparent transparent;
+            }
+
+            .balloon-left .balloon-serif:before {
+                content: "";
+                position: absolute;
+                left: -9px;
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 7px 10px 7px 0;
+                z-index: 3;
+            }
+
 /************************************
 ** ボックスナビ
 ************************************/
