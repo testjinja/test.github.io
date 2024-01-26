@@ -208,6 +208,56 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 		padding: 0 !important;
 	}
 </style>
+<!--テキストのラインマーカのスタイル-->
+	<style>
+            .zebline-color-a {
+                background: linear-gradient(transparent 50%, rgba(245, 205, 205, 1.0) 50%);
+            }
+
+            .zebline-color-b {
+                background: linear-gradient(transparent 50%, #E4878F 50%);
+            }
+
+            .zebline-color-c {
+                background: linear-gradient(transparent 50%, #57BDE9 50%);
+            }
+
+            .zebline-maker {
+                transition: 2.5s;
+            }
+
+            .zebline-maker {
+                font-weight: 700;
+                background-repeat: no-repeat;
+                background-size: 200% 100%;
+                background-position: 200% 0
+            }
+
+            .zebline-show {
+                background-position: 100% 0
+            }
+
+            @-webkit-keyframes blink {
+                0% {
+                    opacity: .1
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: .1
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        </style>
+<!-- End テキストのラインマーカのスタイル-->
 
 <link rel='stylesheet' id='wp-block-library-css' href='../../css/24sekki-css/style.min.css' type='text/css' media='all' />
 <style id='classic-theme-styles-inline-css' type='text/css'>
@@ -2358,10 +2408,38 @@ return false;
 	});
 
 </script>
+<!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
+        <script>
+            var zeblineSpeed = 2600
+            var zeblineWindowHeight = window.innerHeight;
+            zebline_script('.zebline-maker');
+
+            function zebline_script(zeblineMakerDom) {
+                document['addEventListener']('DOMContentLoaded', function() {
+                    var c = document['querySelectorAll'](zeblineMakerDom);
+                    window['addEventListener']('scroll', d, ![]);
+                    function d() {
+                        for (let e = 0x0; e < c['length']; e++) {
+                            var f = c[e];
+                            var g = f['getBoundingClientRect']()['top'];
+                            if (g - zeblineWindowHeight + 0x32 < 0x0) {
+                                f['classList']['add']('zebline-show');
+                                setTimeout(function() {
+                                    f['classList']['add']('zebline-show-a');
+                                }, zeblineSpeed);
+                            }
+                        }
+                    }
+                    ;
+                });
+            }
+        </script>
+<!-- End アニメーション機能（下線アニメ）を付加 -->
+<!-- ページトップへ戻るボタン
 <div id="page-top">
 	<a class="totop"><i class="jic jin-ifont-arrowtop"></i></a>
 </div>
-
+-->
 </body>
 </html>
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
