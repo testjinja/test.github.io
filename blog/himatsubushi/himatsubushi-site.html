@@ -2212,7 +2212,7 @@
 　　　　　<!-- 宣伝広告を配置 -->
                   　　　　　    <div style="display: block; margin-left: auto; margin-right: auto;">
 <!--                               <iframe id="side-adarea" src="../../apage/side-adarea01.html" width="100%" style="border: none;"></iframe>　-->
-　　                  　　　       <iframe id="side-adarea" src="../../apage/side-adarea01.html" width="100%" height="2210px" style="border: none;" scrolling="no"></iframe>
+　　                  　　　       <iframe id="side-adarea" src="../../apage/side-adarea01.html" width="100%" height="100%" style="border: none;" scrolling="no"></iframe>
                                </div>
 　　　　　<!-- End 宣伝広告を配置 -->
                             </div>
@@ -2253,7 +2253,7 @@
 <!--　下2行はワードプレスのプラグイン関連の可能性が高いため、記事ごとで削除する
         <script type='text/javascript' src='../../js/himatsubushi-js/gtm4wp-form-move-tracker.js' id='gtm4wp-form-move-tracker-js'></script>
         <script defer type='text/javascript' src='../../js/himatsubushi-js/akismet-frontend.js' id='akismet-frontend-js'></script>
---><!--
+-->
 <script>
 window.addEventListener('load', function() {
     var iframe = document.getElementById('side-adarea'); // iframeのIDを設定
@@ -2266,20 +2266,6 @@ window.addEventListener('load', function() {
     }
 });
 </script>
- -->
-        <script>
-        window.addEventListener('load', function() {
-            var iframe = document.getElementById('side-adarea');
-            try {
-                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-                var height = iframeDocument.documentElement.scrollHeight || iframeDocument.body.scrollHeight;
-                iframe.style.height = height + 'px';
-            } catch (e) {
-                console.log("iframeの高さ調整に失敗しました: ", e);
-            }
-        });
-        </script>
-
 <!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
         <script>
             var zeblineSpeed = 2600
