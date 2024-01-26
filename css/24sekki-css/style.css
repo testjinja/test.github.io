@@ -17143,6 +17143,164 @@ _::-webkit-full-page-media, _:future, :root .profile-title {
     font-size: 14px;
 }
 
+/*
+ * ヘッダーナビのスタイル
+ */
+/*PCナビ：念のためスマホで非表示設定*/
+.desktop-nav {
+  display: none;
+}
+
+/*モバイル専用ヘッダーナビ*/
+.mobile-nav {
+  overflow: hidden;
+}
+.mobile-nav,
+.mobile-nav li,
+.mobile-nav li a {
+  height: 40px;
+}
+.mobile-nav ul {
+  overflow-x: auto;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  animation: RightToLeft 2s cubic-bezier(0.24, 0.56, 0.47, 0.91) 0s 1 normal;
+  -webkit-overflow-scrolling: touch;
+}
+.mobile-nav ul::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+}
+
+@keyframes RightToLeft {
+  0% {
+    transform: translateX(15px);
+  }
+}
+
+.mobile-nav li {
+  display: inline-block;
+  opacity: 0.8;
+}
+.mobile-nav li.current-menu-item {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  opacity: 1;
+}
+.mobile-nav li a {
+  display: inline-block;
+  padding: 0 9px;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.mobile-nav li a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+/*ナビドロワー（ハンバーガーメニュー）*/
+#drawer__content {
+  overflow: auto;
+  position: fixed;
+  z-index: 9999;
+  width: 90%;
+  max-width: 330px;
+  height: 100%;
+  padding-bottom: 50px;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+  -webkit-overflow-scrolling: touch;
+}
+#drawer__content .widget {
+  margin: 0 0 15px;
+}
+#drawer__content .widget_search {
+  margin: 1em;
+}
+#drawer__content .searchform__input {
+  background: #efefef;
+  box-shadow: none;
+}
+.drawer__title {
+  position: relative;
+  padding: 7px 15px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.drawer__title .close {
+  display: inline-block;
+  padding: 10px 3px;
+}
+.drawer__title .close span {
+  height: 30px;
+  margin: 0 20px 0 7px;
+}
+.drawer__title .close span:before {
+  left: -13px;
+  width: 30px;
+}
+
+/*ハンバーガーボタン・検索*/
+.drawer-unshown,
+.drawer--unshown {
+  display: none; /*はじめ非表示に*/
+}
+#drawer__open,
+.header-search {
+  position: absolute;
+  top: 0;
+  width: 48px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 23px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 62px;
+}
+#drawer__open {
+  left: 0;
+}
+.header-search {
+  right: 0;
+}
+#drawer__close-cover {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+#drawer__input:checked ~ #drawer__content {
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+#drawer__input:checked ~ #drawer__close-cover {
+  display: block;
+  opacity: 0.5;
+}
+
+  /*
+ * ナビ 769px~
+ */
+
+  /*PCではモバイルナビを非表示に*/
+  .mobile-nav {
+    display: none;
+  }
   .desktop-nav,
   .desktop-nav ul,
   .desktop-nav li,
@@ -17265,4 +17423,13 @@ _::-webkit-full-page-media, _:future, :root .profile-title {
   .desktop-nav .sub-menu li:hover:after {
     content: none;
   }
+
+  /*モバイル用メニュー関連*/
+  #drawer__open {
+    display: none;
+  }
+  #inner-header {
+    max-width: 100%;
+  }
+
 /* End 旅行達人から追加*/
