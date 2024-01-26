@@ -2052,11 +2052,10 @@ color:#f6a068;/* アイコン色 */
 		
 	<!--フッター-->
 
-				<!-- breadcrumb -->
-<!--フッター上段のサイト枝（パンくずリスト）-->
+<!-- breadcrumb -->
+<!--フッター上段のサイト枝（パンくずリスト）
 <div id="breadcrumb" class="footer_type1">
 	<ul itemscope itemtype="https://schema.org/BreadcrumbList">
-<!--		<div class="page-top-footer"><a class="totop"><i class="jic jin-ifont-arrowtop"></i></a></div>　-->
 		<div class="page-top-footer"><a class="totop"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
 		<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 			<a href="../../home/" itemprop="item" itemscope itemtype="https://schema.org/Thing">
@@ -2081,7 +2080,32 @@ color:#f6a068;/* アイコン色 */
 		</li>
 	</ul>
 </div>
+-->
 <!-- End breadcrumb	-->
+                          <!-- 以下の約20行は、パンくずリスト -->
+                                <nav id="breadcrumb" class="footer_type1">
+                                    <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+                                    <div class="page-top-footer"><a class="totop"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                            <a href="../../" itemprop="item">
+                                                <span itemprop="name">ホーム</span>
+                                            </a>
+                                            <meta itemprop="position" content="1"/>
+                                        </li>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                            <a href="../../blog/" itemprop="item">
+                                                <span itemprop="name">ブログ</span>
+                                            </a>
+                                            <meta itemprop="position" content="2"/>
+                                        </li>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                                <span itemprop="name">【二十四節気の『大寒（だいかん）』とは：大寒の読み方と深い意味、過ごし方や旬の食べ物、冬の最寒期を楽しもう</span>
+                                            </a>
+                                            <meta itemprop="position" content="3"/>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            <!-- End パンくずリスト -->
 		
 <!--フッター-->		
 <footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
