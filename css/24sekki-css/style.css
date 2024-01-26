@@ -17133,3 +17133,12 @@ _::-webkit-full-page-media, _:future, :root .profile-title {
 .jin-ifont-arrow-left:before {
   content: "\e933";
 }
+
+/*旅行達人から追加*/
+#breadcrumb li:after {
+    padding: 0 6px;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: FontAwesome;
+    content: "\f0da";
+    font-size: 14px;
+}
