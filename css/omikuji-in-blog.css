@@ -87,4 +87,6 @@
 .payment-box {
     text-align: center; /* テキストとinline要素を中央揃え */
     max-width: 400px; /* コンテナの幅を最大400pxに */
-    margin: 10 auto; /*自動マージンで中央配置 */
+    margin: 10px auto; /* 上下に10pxのマージン、左右自動マージンで中央配置 */
+}
+
