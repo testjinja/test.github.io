@@ -2029,31 +2029,71 @@ color:#f6a068;/* アイコン色 */
 <!--End 開始宣言後の終端なので消しちゃダメ-->
 	
 <!--サイドバー-->
-　　　<div id="sidebar" class="sideber sidebar_style2 animate" role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
-　　　　　    <div style="display: block; margin-left: auto; margin-right: auto;">
-　　　　　        <iframe src="../../apage/side-adarea01.html" width="100%" height="2210px" style="border: none;"></iframe>
-             </div>
-    <!-- おみくじセクションの確立 -->  
-    <div class="omikuji-section" style="display: block; margin-left: auto; margin-right: auto;">
-        <!-- おみくじ用キャッチコピー -->
-        <div class="omikuji-catchphrase">
-    ブログの途中ですが、ひまつぶしに一息<br>おみくじタイムをどうぞ。<br>あなたの今日の運勢は何％かな？？
-        </div>  
-    <!-- タブのナビゲーションタイプ -->
-        <div class="omikuji-tab">
-            <button class="omikuji-tablinks active" onclick="openOmikuji(event, 'Omikuji1')">チヤの<br>いだてん<br>おみくじ</button>
-            <button class="omikuji-tablinks" onclick="openOmikuji(event, 'Omikuji2')">チヤの<br>いだてん<br>イラスト</button>
-        </div>
-    <!-- タブコンテンツ -->
-        <div id="Omikuji1" class="omikuji-tabcontent" style="display:block;">
-            <!-- おみくじ1のコンテンツ -->
-            <iframe src="../../omikuji/idaten-omikuji-in-blog.html" width="100%" height="700px"></iframe>
-        </div>
-        <div id="Omikuji2" class="omikuji-tabcontent" style="display:none;">
-            <!-- おみくじ2のコンテンツ -->
-            <iframe src="../../omikuji/idaten-illust-in-blog.html" width="100%" height="700px"></iframe>
-        </div>
-    </div>
+<div id="sidebar" class="sideber sidebar_style2 animate" role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+　　　　　<!-- おみくじセクション --> 
+　　　　　    <div class="omikuji-section" style="display: block; margin-left: auto; margin-right: auto;">
+　　　　　        <!-- おみくじ用キャッチコピー -->
+　　　　　        <div class="catchphrase"><span class="zebline-maker zebline-color-a">ご利益ありますように～</span><br>ひまつぶしに<br>チヤのいだてんおみくじをどうぞ。</div>
+　　　　　        <div id="Omikuji1" class="tabcontent" style="display:block;">
+　　　　　            <iframe src="../../omikuji/idaten-omikuji-in-blog.html" width="100%" height="700px" style="border: none;"></iframe>
+　　　　　        </div>
+　　　　　    </div>
+　　　　　<!-- End おみくじセクション --> 
+　　　　　<!-- チヤタキ通信の宣伝を配置 -->
+　　　　　        <div class="chiyataki-section" style="display: block; margin-left: auto; margin-right: auto;">
+　　　　　            <iframe id="side-adarea" src="../../apage/side-adarea01.html" width="100%" height="680px" style="border: none;" scrolling="no"></iframe>
+　　　　　            <p style="text-align: center;">
+                     <span class="zebline-maker zebline-color-a">
+                     <strong>
+                         <span style="color: #ff0000;">最新刊</span>
+                     </strong>好評発売中</span>
+                           <!-- キャラ＋吹き出しセリフ-->
+                                <div class="balloon-box balloon-left balloon-gray balloon-bg-gray clearfix">
+                                    <div class="balloon-icon">
+                                        <img src="../../img_blog/1x1.trans.gif" data-lazy-src="../../img/fukidashi/chiyajinja-chiya-004-160x160.png" decoding="async" loading="lazy" class="alignnone size-thumb-160" alt="チヤ神社-チヤのかわいいアイコン-その4" width="160" height="160" srcset="../../img/fukidashi/chiyajinja-chiya-004-160x160.png 160w, ../../img/fukidashi/chiyajinja-chiya-004-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px"/>
+                                        <noscript>
+                                        <img decoding="async" loading="lazy" class="alignnone size-thumb-160" src="../../img/fukidashi/chiyajinja-chiya-004-160x160.png" alt="チヤ神社-チヤのかわいいアイコン-その13" width="160" height="160" srcset="../../img/fukidashi/chiyajinja-chiya-004-160x160.png 160w, ../../img/fukidashi/chiyajinja-chiya-004-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px"/>
+                                        </noscript>
+                                    </div>
+                                    <div class="icon-name">チヤ</div>
+                                    <div class="balloon-serif">
+                                        <div class="balloon-content">
+                                            <span class="zebline-maker zebline-color-a">
+                                            kindle Unlimitedでは<br>無料で読めま～す。
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                           <!-- End キャラ＋吹き出しセリフ-->
+                        <a class="btn btn--yellow btn--cubic" href="https://amzn.asia/d/25vd8vX" style="text-align: center;">
+                           チヤとタキの日めくりコーデ<br>kindleへGo！
+                        </a>
+　　　　　        </div>
+　　　　　<!-- End チヤタキ通信の宣伝を配置 -->
+　　　　　<!-- お賽銭箱を配置 -->
+　　　　　        <div class="chiyataki-section" style="display: block; margin-left: auto; margin-right: auto;">
+                    <iframe id="side-adarea" src="../../apage/side-osaisenbox.html" width="100%" height="250px" style="border: none;" scrolling="no">
+                    </iframe>
+                           <!-- キャラ＋吹き出しセリフ-->
+                                <div class="balloon-box balloon-left balloon-gray balloon-bg-gray clearfix">
+                                    <div class="balloon-icon">
+                                        <img src="../../img_blog/1x1.trans.gif" data-lazy-src="../../img/fukidashi/chiyajinja-chiya-009-160x160.png" decoding="async" loading="lazy" class="alignnone size-thumb-160" alt="チヤ神社-チヤのかわいいアイコン-その9" width="160" height="160" srcset="../../img/fukidashi/chiyajinja-chiya-009-160x160.png 160w, ../../img/fukidashi/chiyajinja-chiya-009-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px"/>
+                                        <noscript>
+                                        <img decoding="async" loading="lazy" class="alignnone size-thumb-160" src="../../img/fukidashi/chiyajinja-chiya-009-160x160.png" alt="チヤ神社-チヤのかわいいアイコン-その9" width="160" height="160" srcset="../../img/fukidashi/chiyajinja-chiya-009-160x160.png 160w, ../../img/fukidashi/chiyajinja-chiya-009-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px"/>
+                                        </noscript>
+                                    </div>
+                                    <div class="icon-name">チヤ</div>
+                                    <div class="balloon-serif">
+                                       <div class="balloon-content">
+                                           <span class="zebline-maker zebline-color-a">
+                                               お賽銭くれると嬉しいな～
+                                           </span>
+                                       </div>
+                                    </div>
+                                </div>
+                           <!-- End キャラ＋吹き出しセリフ-->
+　　　　　        </div>
+　　　　　<!-- End お賽銭箱を配置 -->
 </div><!--サイドバー終端-->
 </div><!--メインコンテンツ終端（ヘッダー～フッター間全部）-->
 		
