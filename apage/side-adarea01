@@ -8,7 +8,7 @@
 <!--     <link rel="stylesheet" href="../css/idaten-omikuji-styles.css"> -->
     <!-- 新しいブログ用のスタイルシートのリンク -->
     <link rel="stylesheet" href="../css/sekki-blog.css">
-
+<!--omikuji-in-blog.css<!-->
 <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -23,44 +23,57 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5Q9DLB3"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!--    <header>
-        <img id="header-image" src="../img/header000.jpg" alt="Header Image">
-    </header>　-->
-    <main>
-        <!-- おみくじディスプレイの追加 -->
-        <div id="image-display">
-            <img src="../img/kujitop00001.jpg" alt="Omikuji Image" id="kuji-img">
-        </div>
-
-       <!-- 天井トグルボタンの追加 -->
-        <div class="switch">
-            <label for="toggle-ceiling-input" class="toggle-label-left">天井なし</label>
-            <input type="checkbox" id="toggle-ceiling-input" class="toggle-ceiling">
-            <label for="toggle-ceiling-input" class="slider"></label>
-            <label for="toggle-ceiling-input" class="toggle-label-right">天井50回</label>
-        </div>
-        
-        <!-- おみくじボタン・カウントエリアの追加 -->
-        <div class="button-container">
-            <button id="manual-button">手動 de<br>おみくじ</button>
-            <div id="count-display">0</div>
-            <button id="auto-button">オススメ<br>自動 de<br>おみくじ</button>
-        </div>
-        
-　　　　　<!-- おめでとうのモーダル -->
-　　　　 <div id="congratulations-modal" style="display:none;">
-            <h2>おめでと〜♪♪♪</h2>
-            <p id="switch-count-result"></p>
-            <p id="percentage-result"></p>
-            <button id="retry-button">もう一度おみくじを引く</button>
-
-          <!-- モーダル内お賽銭箱 -->
-<!--　賽銭箱を表示するためには、この行をコメントアウト(1/2) 
-            <a href="https://donate.stripe.com/cN2aHvaOW5FM5gs6op" target="_blank">　
-                 <img id="payment-button" src="../img/saisenbox0001a.jpg" alt="お賽銭ボタン">
-            </a>
-      賽銭箱を表示するためには、この行をコメントオフ(2/2) -->
-
+　　　　　    <!-- おみくじセクションの確立 -->  
+　　　　　    <div class="omikuji-section" style="display: block; margin-left: auto; margin-right: auto;">
+　　　　　        <!-- おみくじ用キャッチコピー -->
+　　　　　        <div>
+                  <p class="catchphrase"><span class="zebline-maker zebline-color-a">ご利益ありますように～</span><br>ひまつぶしに<br>チヤのいだてんおみくじをどうぞ。</p>
+ 　　　　　   <!-- タブのナビゲーションタイプ
+ 　　　　　　　       <div class="tab">
+  　　　　　　　          <button class="tablinks active" onclick="openOmikuji(event, 'Omikuji1')">チヤの<br>いだてん<br>おみくじ</button>
+   　　　　　　　         <button class="tablinks" onclick="openOmikuji(event, 'Omikuji2')">チヤの<br>いだてん<br>イラスト</button>
+ 　　　　　　　       </div>
+              -->
+　　　　　　　    <!-- タブコンテンツ -->
+　　　　　　　            <!-- おみくじ1のコンテンツ 
+   　　　　　　　         <div id="Omikuji1" class="tabcontent" style="display:block;">-->
+　　　　　　　 　　           <iframe src="../../omikuji/idaten-omikuji-in-blog.html" width="100%" height="700px" style="border: none;"></iframe>
+　　　　　　　　　        <!--</div>
+　　　　　　　             おみくじ2のコンテンツ
+　　　　　　　　　        <div id="Omikuji2" class="tabcontent" style="display:none;">
+　　　　　　　　　            <iframe src="../../omikuji/idaten-illust-in-blog.html" width="100%" height="700px" style="border: none;"></iframe>
+　　　　　　　　　        </div>
+                 　　　　 -->
+                 </div>
+　　　　　    </div>
+　　　　　    <!-- End おみくじセクションの確立 --> 
+　　　　　<!-- チヤタキコーデのkindleリンク -->
+                                <div id="text-8" class="widget widget_text">
+                                    <div class="textwidget">
+                                            <div style="text-align: center;">
+                                                <a href="https://amzn.asia/d/25vd8vX" rel="nofollow">
+                                                    <img decoding="async" loading="lazy" src="../../img/chiyatakitsushin/dairy-coordinate-005cover.jpg" alt="" width="800" height="1280" border="0"/>
+                                                </a>
+                                            </div>
+                                        <p style="text-align: center;">
+                                            <br>チヤとタキのどきどき日めくりコーデ
+                                            <br>
+                                            <strong>
+                                                <span style="color: #ff0000; text-align: center;">最新刊</span>
+                                            </strong>
+                                            　<span class="zebline-maker zebline-color-a">第５号、好評発売中</span>
+                                            <br>2023年12月のかわいいコーデを収録しています。<br>
+                                        </p>
+                                        <p style="text-align: center;">
+                                            kindleで発売中です。<br>
+                                            kindle Unlimitedでは無料で読めるよ～<br/>
+                                            <a class="btn btn--yellow btn--cubic" href="https://amzn.asia/d/25vd8vX">
+                                                チヤとタキの日めくりコーデ<br>第５号<br>kindleへGo！
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+　　　　　<!-- End チヤタキコーデのkindleリンク -->
 <!-- 広告リンク -->
 <!--　広告を表示するためには、この行の右に記号を追加してコメントアウト(1/2)→    
             <div style="display: flex; justify-content: center; position: relative;">
