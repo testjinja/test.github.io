@@ -306,6 +306,25 @@
         });
         </script>
 <!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('scroll', function() {
+            var elements = document.querySelectorAll('.zebline-maker');
+            for (var i = 0; i < elements.length; i++) {
+                var element = elements[i];
+                var position = element.getBoundingClientRect().top;
+                if (position - window.innerHeight + 50 < 0) {
+                    element.classList.add('zebline-show');
+                    setTimeout(function() {
+                        element.classList.add('zebline-show-a');
+                    }, 2600);
+                }
+            }
+        });
+    });
+</script>       
+<!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
+<!--
         <script>
             var zeblineSpeed = 2600
             var zeblineWindowHeight = window.innerHeight;
@@ -331,6 +350,7 @@
                 });
             }
         </script>
+ -->
 <!-- End アニメーション機能（下線アニメ）を付加 -->
     </body>
 </html>
