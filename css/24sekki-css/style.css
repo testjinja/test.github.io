@@ -17142,3 +17142,127 @@ _::-webkit-full-page-media, _:future, :root .profile-title {
     content: "➢";
     font-size: 14px;
 }
+
+  .desktop-nav,
+  .desktop-nav ul,
+  .desktop-nav li,
+  .desktop-nav li a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+  }
+  .desktop-nav ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .header--center .desktop-nav ul {
+    justify-content: center;
+  }
+  .desktop-nav {
+    float: right;
+    font-weight: bold;
+  }
+  .desktop-nav li {
+    position: relative;
+  }
+  .desktop-nav li a {
+    height: 62px;
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 62px;
+  }
+  .desktop-nav li i {
+    opacity: 0.7;
+    padding-right: 2px;
+  }
+  .desktop-nav .current-menu-item a {
+    opacity: 1;
+  }
+  .desktop-nav li a:hover {
+    text-decoration: none;
+  }
+  .desktop-nav li:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0, 1);
+    transform-origin: left top;
+  }
+  /*ヘッダーメニュー内に検索ボタンを設置した場合*/
+  .desktop-nav a[href="#sng-search"] {
+    padding: 0;
+  }
+  .desktop-nav a[href="#sng-search"] label {
+    display: block;
+    height: 100%;
+    padding: 0 5px;
+    font-size: 19px;
+    cursor: pointer;
+  }
+  .desktop-nav a[href="#sng-search"] i {
+    position: relative;
+    top: -1.5px;
+    opacity: 1;
+  }
+  .desktop-nav li:hover:after {
+    transform: scale(1, 1);
+  }
+  .header-search__open {
+    display: none;
+  }
+  /*中央寄せの場合*/
+  .header--center .desktop-nav {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .header--center .desktop-nav .menu {
+    width: 100%;
+  }
+  .header--center .desktop-nav li a {
+    height: auto;
+    padding: 10px 15px 15px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /*階層メニュー*/
+  .desktop-nav .sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 180px;
+    color: #fff;
+    background-color: #545454;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    transition: 0.3s ease-in-out;
+  }
+  .desktop-nav li:hover .sub-menu {
+    display: block;
+  }
+  .desktop-nav .sub-menu li {
+    display: block;
+    border-bottom: solid 1px #7b7b7b;
+  }
+  .desktop-nav .sub-menu li a {
+    display: block;
+    height: auto;
+    line-height: 1.5;
+    padding: 10px;
+    font-size: 13.5px;
+    vertical-align: middle;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.86);
+  }
+  .desktop-nav .sub-menu li a:hover {
+    background: gray; /*ホバー時のメニューの背景色*/
+  }
+  .desktop-nav .sub-menu li:hover:after {
+    content: none;
+  }
+/* End 旅行達人から追加*/
