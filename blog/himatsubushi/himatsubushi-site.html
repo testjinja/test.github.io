@@ -2253,7 +2253,7 @@
 <!--　下2行はワードプレスのプラグイン関連の可能性が高いため、記事ごとで削除する
         <script type='text/javascript' src='../../js/himatsubushi-js/gtm4wp-form-move-tracker.js' id='gtm4wp-form-move-tracker-js'></script>
         <script defer type='text/javascript' src='../../js/himatsubushi-js/akismet-frontend.js' id='akismet-frontend-js'></script>
--->
+
 <script>
 window.addEventListener('load', function() {
     var iframe = document.getElementById('side-adarea'); // iframeのIDを設定
@@ -2264,6 +2264,33 @@ window.addEventListener('load', function() {
     } catch (e) {
         console.log("iframeの高さ調整に失敗しました: ", e);
     }
+});
+</script>
+-->
+<!-- 検索ウィジェットが表示されたときにマーカーを発火させるスクリプト -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var searchWidget = document.getElementById('search-3');
+    var zeblineElements = document.querySelectorAll('.zebline-maker');
+
+    function checkIfVisibleAndActivateMarker() {
+        var widgetRect = searchWidget.getBoundingClientRect();
+        if (widgetRect.top < window.innerHeight && widgetRect.bottom >= 0) {
+            // 検索ウィジェットが表示されている場合
+            activateMarkerForElements(zeblineElements);
+        }
+    }
+
+    function activateMarkerForElements(elements) {
+        elements.forEach(function(element) {
+            element.classList.add('zebline-show');
+            setTimeout(function() {
+                element.classList.add('zebline-show-a');
+            }, zeblineSpeed);
+        });
+    }
+
+    window.addEventListener('scroll', checkIfVisibleAndActivateMarker);
 });
 </script>
 <!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
