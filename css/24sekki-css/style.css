@@ -17139,6 +17139,6 @@ _::-webkit-full-page-media, _:future, :root .profile-title {
     padding: 0 6px;
     color: rgba(0, 0, 0, 0.2);
     font-family: FontAwesome;
-    content: "\f0da";
+    content: "➢";
     font-size: 14px;
 }
