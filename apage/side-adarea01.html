@@ -153,6 +153,33 @@
     </footer> -->
 
     <script src="../js/idaten-omikuji-script.js"></script>
+<!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
+        <script>
+            var zeblineSpeed = 2600
+            var zeblineWindowHeight = window.innerHeight;
+            zebline_script('.zebline-maker');
+
+            function zebline_script(zeblineMakerDom) {
+                document['addEventListener']('DOMContentLoaded', function() {
+                    var c = document['querySelectorAll'](zeblineMakerDom);
+                    window['addEventListener']('scroll', d, ![]);
+                    function d() {
+                        for (let e = 0x0; e < c['length']; e++) {
+                            var f = c[e];
+                            var g = f['getBoundingClientRect']()['top'];
+                            if (g - zeblineWindowHeight + 0x32 < 0x0) {
+                                f['classList']['add']('zebline-show');
+                                setTimeout(function() {
+                                    f['classList']['add']('zebline-show-a');
+                                }, zeblineSpeed);
+                            }
+                        }
+                    }
+                    ;
+                });
+            }
+        </script>
+<!-- End アニメーション機能（下線アニメ）を付加 -->
 </body>
 
 </html>
