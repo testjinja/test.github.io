@@ -2254,16 +2254,16 @@
         <script defer type='text/javascript' src='../../js/himatsubushi-js/akismet-frontend.js' id='akismet-frontend-js'></script>
 -->
         <script>
-            window.addEventListener('load', function() {
-                var iframe = document.getElementById('side-adarea'); // iframeのIDを設定
-                try {
-                    var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-                    var height = iframeDocument.documentElement.scrollHeight || iframeDocument.body.scrollHeight;
-                    iframe.style.height = height + 'px';
-                } catch (e) {
-                    console.log("iframeの高さ調整に失敗しました: ", e);
-                }
-            });
+        window.addEventListener('load', function() {
+            var iframe = document.getElementById('side-adarea');
+            try {
+                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                var height = iframeDocument.documentElement.scrollHeight || iframeDocument.body.scrollHeight;
+                iframe.style.height = height + 'px';
+            } catch (e) {
+                console.log("iframeの高さ調整に失敗しました: ", e);
+            }
+        });
         </script>
 <!-- 下記は.zebline-makerを持つ要素にアニメーション機能（下線アニメ）を付加するためのスクリプト -->
         <script>
