@@ -1360,7 +1360,24 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
                 border-width: 7px 10px 7px 0;
                 z-index: 3;
             }
+            /* 吹き出し（右側） */
+            .balloon-right .balloon-icon {
+                right: 0; /* 左から右へ変更 */
+            }
+
+            .balloon-right .balloon-serif {
+                float: right; /* 左から右へ変更 */
+                margin: 0 85px 40px 5px; /* マージンを調整 */
+            }
+
+            .balloon-right .balloon-serif:before {
+                right: -9px; /* 左から右へ変更 */
+                border-width: 7px 0 7px 10px; /* 吹き出しの矢印の向きを変更 */
+                border-color: transparent transparent transparent #E4FFCC; /* 吹き出しの矢印の向きを変更 */
+            }
+            /* End 吹き出し（右側） */
             /* End 吹き出し */
+	
             /* チヤタキ通信ボタン */
             a.btn--yellow {
                 color: #000;
