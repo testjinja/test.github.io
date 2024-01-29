@@ -1,4 +1,3 @@
-
             /* 吹き出し */
             .balloon-box {
                 position: relative;
@@ -91,7 +90,43 @@
                 border-width: 7px 10px 7px 0;
                 z-index: 3;
             }
+            /* 吹き出し（右側） */
+            .balloon-right .balloon-icon {
+                right: 0; /* 左から右へ変更 */
+            }
 
+            .balloon-right .balloon-serif {
+                float: right; /* 左から右へ変更 */
+                margin: 0 85px 40px 5px; /* マージンを調整 */
+            }
+
+            .balloon-right .balloon-serif .balloon-content {
+                position: relative;
+                line-height: 1.5rem;
+                background: #E4FFCC; /* 元のカラー #efefef*/
+                border-radius: 6px;
+                font-size: .95em;
+                z-index: 2;
+            }
+
+            .balloon-right .balloon-serif:before {
+                right: -9px; /* 左から右へ変更 */
+                border-width: 7px 0 7px 10px; /* 吹き出しの矢印の向きを変更 */
+                border-color: transparent transparent transparent #E4FFCC; /* 吹き出しの矢印の向きを変更 */
+            }
+
+@media (max-width: 767px) { /* スマートフォン用のスタイル */
+  .balloon-serif { /*.balloon-content {　（セリフ部分の高さを可変式にしたいので、一度contentを抜いてみる）*/
+    min-height: 67px; /* スマートフォン用の最小高さ */
+  }
+  .icon-name {
+    top: 85px; /* スマートフォン用の位置調整 */
+  }
+}
+            /* End 吹き出し（右側） */
+            /* End 吹き出し */
+
+            /* チヤタキ通信ボタン */
             a.btn--yellow {
                 color: #000;
                 background-color: #fff100;
@@ -105,7 +140,7 @@
                 border-bottom: 2px solid #ccc100;
             }
 
-            .btn {
+            .btn {            
                 font-size: 1.0rem;
                 font-weight: 700;
                 line-height: 1.5;
@@ -127,6 +162,7 @@
                 color: #212529;
                 border-radius: 0.5rem;
             }
+            /* End チヤタキ通信ボタン */
 
             /* ポイント */
             .concept-box1 {
